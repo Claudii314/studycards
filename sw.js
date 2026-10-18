@@ -1,10 +1,9 @@
 /*
  * Service worker: приложение открывается без интернета и устанавливается на телефон.
- * Файлы приложения: отдаём из кэша и обновляем в фоне.
- * Общий набор (shared.json): сначала сеть, без сети — последняя сохранённая версия.
+ * Все файлы: сначала сеть (обновления видны сразу), без сети — последняя сохранённая копия.
  * При изменении файлов приложения увеличьте номер VERSION, чтобы у всех обновился кэш.
  */
-const VERSION = "v4";
+const VERSION = "v5";
 const CACHE = "studycards-" + VERSION;
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "styles.css",
@@ -34,38 +33,21 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // GitHub API и прочее — напрямую
 
-  if (url.pathname.endsWith("/shared.json")) {
-    event.respondWith(networkFirst(req, new URL("shared.json", self.registration.scope).href));
-    return;
-  }
-  if (req.mode === "navigate") {
-    event.respondWith(networkFirst(req, new URL("index.html", self.registration.scope).href));
-    return;
-  }
-  event.respondWith(staleWhileRevalidate(req));
+  // Всегда сначала сеть: обновления сайта видны сразу. Без интернета — сохранённая копия.
+  let key = url.origin + url.pathname;
+  if (req.mode === "navigate") key = new URL("index.html", self.registration.scope).href;
+  event.respondWith(networkFirst(req, key));
 });
 
 async function networkFirst(req, cacheKey) {
   const cache = await caches.open(CACHE);
   try {
-    const res = await fetch(req);
+    const res = await fetch(req, { cache: "no-cache" });
     if (res.ok) cache.put(cacheKey, res.clone());
     return res;
   } catch (e) {
-    const cached = await cache.match(cacheKey);
+    const cached = (await cache.match(cacheKey)) || (await cache.match(req, { ignoreSearch: true }));
     if (cached) return cached;
-    throw e;
+    return new Response("Нет подключения к интернету", { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } });
   }
-}
-
-async function staleWhileRevalidate(req) {
-  const cache = await caches.open(CACHE);
-  const cached = await cache.match(req, { ignoreSearch: true });
-  const network = fetch(req).then((res) => {
-    if (res.ok) cache.put(req, res.clone());
-    return res;
-  }).catch(() => null);
-  if (cached) { network.catch(() => {}); return cached; }
-  const res = await network;
-  return res || new Response("Нет подключения к интернету", { status: 503, headers: { "Content-Type": "text/plain; charset=utf-8" } });
 }
