@@ -1,19 +1,19 @@
 /*
  * Service worker: приложение открывается без интернета и устанавливается на телефон.
  * Файлы приложения: отдаём из кэша и обновляем в фоне.
- * Общий набор (data/shared.json): сначала сеть, без сети — последняя сохранённая версия.
+ * Общий набор (shared.json): сначала сеть, без сети — последняя сохранённая версия.
  * При изменении файлов приложения увеличьте номер VERSION, чтобы у всех обновился кэш.
  */
-const VERSION = "v2";
+const VERSION = "v3";
 const CACHE = "studycards-" + VERSION;
 const SHELL = [
-  "./", "index.html", "manifest.webmanifest", "css/styles.css",
-  "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png",
-  "js/utils.js", "js/db.js", "js/editor.js", "js/repo.js", "js/backup.js", "js/github.js", "js/sync.js",
-  "js/ui.js", "js/router.js", "js/app.js",
-  "js/views/subjects.js", "js/views/subject.js", "js/views/group.js", "js/views/flashcards.js",
-  "js/views/quiz.js", "js/views/backup.js", "js/views/author.js",
-  "data/shared.json",
+  "./", "index.html", "manifest.webmanifest", "styles.css",
+  "icon-192.png", "icon-512.png", "icon-maskable-512.png",
+  "utils.js", "db.js", "editor.js", "repo.js", "backup.js", "github.js", "sync.js",
+  "ui.js", "router.js", "app.js",
+  "view-subjects.js", "view-subject.js", "view-group.js", "view-flashcards.js",
+  "view-quiz.js", "view-backup.js", "view-author.js",
+  "shared.json",
 ];
 
 self.addEventListener("install", (event) => {
@@ -34,8 +34,8 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // GitHub API и прочее — напрямую
 
-  if (url.pathname.endsWith("/data/shared.json")) {
-    event.respondWith(networkFirst(req, new URL("data/shared.json", self.registration.scope).href));
+  if (url.pathname.endsWith("/shared.json")) {
+    event.respondWith(networkFirst(req, new URL("shared.json", self.registration.scope).href));
     return;
   }
   if (req.mode === "navigate") {
