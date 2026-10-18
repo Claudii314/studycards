@@ -1,0 +1,713 @@
+{
+  "format": "studycards-backup",
+  "version": 1,
+  "exportedAt": "2026-10-18T19:30:00.000Z",
+  "subjects": [
+    {
+      "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
+      "name": "Letecké právo",
+      "createdAt": 1792352991874,
+      "updatedAt": 1792352991874
+    }
+  ],
+  "groups": [
+    {
+      "id": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "subjectId": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
+      "name": "Blok 1 – Právo a legislatíva (1.1–1.25)",
+      "createdAt": 1792352991875,
+      "updatedAt": 1792352991875
+    },
+    {
+      "id": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "subjectId": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
+      "name": "Blok 2 – Dohovory (2.1–2.25)",
+      "createdAt": 1792352991901,
+      "updatedAt": 1792352991901
+    },
+    {
+      "id": "95549156-7a9b-466f-a112-86f175db21a7",
+      "subjectId": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
+      "name": "Blok 3 – Medzinárodné organizácie (3.1–3.25)",
+      "createdAt": 1792352991927,
+      "updatedAt": 1792352991927
+    }
+  ],
+  "cards": [
+    {
+      "id": "5dac76fb-a4d3-4525-aaf1-4f24bd718689",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.1 Čo je to aviatika?",
+      "answer": "Odvetvie vedeckej a technickej činnosti zaoberajúce sa lietaním pomocou strojov a zariadení.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991876,
+      "updatedAt": 1792352991876
+    },
+    {
+      "id": "3abe8105-0664-402a-8baf-900169635f86",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.2 Ktorý z nasledujúcich významov prislúcha pojmu legislatíva?",
+      "answer": "Príprava a tvorba zákonov a právnych predpisov.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991877,
+      "updatedAt": 1792352991877
+    },
+    {
+      "id": "a10277d4-2788-4d9a-9349-6ce6715600f8",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.3 Aká je jedna zo základných funkcií práva v spoločnosti?",
+      "answer": "Vytvárať a zabezpečovať poriadok a stabilitu.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991878,
+      "updatedAt": 1792352991878
+    },
+    {
+      "id": "8dd95805-6994-4666-84c6-8b21826ec8e0",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.4 Čo je charakteristické pre kontinentálny systém práva?",
+      "answer": "Základným prameňom práva je zákon ako všeobecne záväzný normatívny právny akt.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991879,
+      "updatedAt": 1792352991879
+    },
+    {
+      "id": "a581d493-166a-457e-8616-af4ab4af2252",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.5 V ktorom právnom systéme sudca právo nielen aplikuje, ale ho svojimi rozhodnutiami aj tvorí?",
+      "answer": "Anglo-americký systém práva.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991880,
+      "updatedAt": 1792352991880
+    },
+    {
+      "id": "e8743615-3217-4c82-bee5-badf5ec6971b",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.6 Čo je základným formálnym prameňom islamského práva s najvyššou právnou silou?",
+      "answer": "Korán.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991881,
+      "updatedAt": 1792352991881
+    },
+    {
+      "id": "b76b0f61-ccdd-4e05-9abe-75bdfc390c92",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.7 Ktorý prameň práva je historicky najstarší a označuje sa ako nepísaný zákon?",
+      "answer": "Právna obyčaj.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991882,
+      "updatedAt": 1792352991882
+    },
+    {
+      "id": "14072f25-d67c-4971-82f5-c754c7860bda",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.8 Pre ktorú oblasť majú najväčšie opodstatnenie normatívne zmluvy?",
+      "answer": "Pre oblasť medzinárodného práva.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991883,
+      "updatedAt": 1792352991883
+    },
+    {
+      "id": "c99298c9-e1b4-461c-b872-75ef31785628",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.9 Čo je to precedens?",
+      "answer": "Rozhodnutie súdu, ktorým sa rieši prípad doteraz právne neregulovaný a stáva sa záväzným pre budúcnosť.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991884,
+      "updatedAt": 1792352991884
+    },
+    {
+      "id": "cd2acc4d-016f-4390-9396-0272406bb0d5",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.10 Do ktorých troch druhov systémov možno rozdeliť právo podľa územnej pôsobnosti v SR?",
+      "answer": "Medzinárodné, vnútroštátne a Európske právo.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991885,
+      "updatedAt": 1792352991885
+    },
+    {
+      "id": "21df5827-41d7-43db-be13-10c32e820879",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.11 Akým typom systému je medzinárodné právo z hľadiska povahy noriem?",
+      "answer": "Systémom koordinačnej povahy, kde sú si subjekty rovnocenné.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991886,
+      "updatedAt": 1792352991886
+    },
+    {
+      "id": "d06e6b63-e5e8-4694-a75a-b4ff5d388980",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.12 Ktorý subjekt je považovaný za základný subjekt medzinárodného práva?",
+      "answer": "Štát.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991887,
+      "updatedAt": 1792352991887
+    },
+    {
+      "id": "23b87052-a83d-48e0-84b3-8565f2558fbf",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.13 Čo je základom vzniku nového pravidla v medzinárodnom práve?",
+      "answer": "Súhlasný prejav vôle minimálne dvoch subjektov medzinárodného práva.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991888,
+      "updatedAt": 1792352991888
+    },
+    {
+      "id": "1681003b-2c4c-43f6-9106-7c88fb5d77af",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.14 Na aké dve hlavné skupiny sa delia subjekty vnútroštátneho práva?",
+      "answer": "Fyzické osoby a právnické osoby.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991889,
+      "updatedAt": 1792352991889
+    },
+    {
+      "id": "a255bf79-f2fd-41de-8d90-3ca3448b1482",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.15 Na akom princípe sú založené normy verejného práva?",
+      "answer": "Na princípe nadriadenosti a podriadenosti.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991890,
+      "updatedAt": 1792352991890
+    },
+    {
+      "id": "4ef41a20-49f4-4398-8088-8c4baa85ea02",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.16 Ktoré právne odvetvie v SR upravuje organizáciu a činnosť verejnej správy?",
+      "answer": "Správne (administratívne) právo.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991891,
+      "updatedAt": 1792352991891
+    },
+    {
+      "id": "3f3e56f0-1074-4d9a-822e-7368c1f2d29e",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.17 Čo upravuje konfesné právo?",
+      "answer": "Postavenie registrovaných cirkví a náboženských spoločností v štáte.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991892,
+      "updatedAt": 1792352991892
+    },
+    {
+      "id": "ebcfe777-b9b6-4c93-8b9f-e323e891282e",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.18 Ktorá zásada platí pri súkromnom práve?",
+      "answer": "Zásada rovnosti účastníkov súkromnoprávnych vzťahov.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991893,
+      "updatedAt": 1792352991893
+    },
+    {
+      "id": "ea1f9120-5bab-48d7-804d-4ed35e5495e0",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.19 Čo tvorí tzv. primárne právo Európskej únie?",
+      "answer": "Zakladajúce zmluvy (napr. Zmluva o EÚ).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991894,
+      "updatedAt": 1792352991894
+    },
+    {
+      "id": "1a3a192f-22ce-48d8-ae37-475a1b982c1c",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.20 Čo je typické pre Nariadenie EÚ?",
+      "answer": "Je priamo aplikovateľné a záväzné vo všetkých členských štátoch bez potreby transpozície.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991895,
+      "updatedAt": 1792352991895
+    },
+    {
+      "id": "a6557da3-acd2-478f-8c1a-5075a99c8c82",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.21 Čo je príznakové pre Smernicu EÚ?",
+      "answer": "Zaväzuje členské štáty k dosiahnutiu cieľa, ale ponecháva im voľbu formy a prostriedkov (vyžaduje transpozíciu).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991896,
+      "updatedAt": 1792352991896
+    },
+    {
+      "id": "88534473-42cd-4c4a-a363-4a28f5f03842",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.22 Ktorá agentúra EÚ sa špecializuje na bezpečnosť letectva?",
+      "answer": "EASA.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991897,
+      "updatedAt": 1792352991897
+    },
+    {
+      "id": "7cbd30f0-36dc-45ed-b844-6bc4f015ae3a",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.23 Aký charakter majú spravidla medzinárodné právne normy v oblasti letectva vydávané napr. ICAO?",
+      "answer": "Odporúčací charakter (za účelom unifikácie pravidiel).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991898,
+      "updatedAt": 1792352991898
+    },
+    {
+      "id": "148e1cac-f322-42c0-9f33-a83aba0d6d64",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.24 Čo je úlohou národných leteckých zákonov?",
+      "answer": "Definovať národné letecké autority a základné pravidlá činnosti vo vzdušnom priestore krajiny.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991899,
+      "updatedAt": 1792352991899
+    },
+    {
+      "id": "6e97461d-23a8-45ff-a995-3db6648ab8dd",
+      "groupId": "a603b8ce-dd8d-4ca5-8e6a-347fd27a12b7",
+      "question": "1.25 Prečo je unifikácia pravidiel v letectve dôležitá?",
+      "answer": "Pre zaistenie bezpečnosti leteckej dopravy v globálnom meradle.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991900,
+      "updatedAt": 1792352991900
+    },
+    {
+      "id": "bff6a882-7b88-4b99-a46a-5e4ce00ae63c",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.1 Čo sa v histórii letectva považuje za úplne prvú oficiálnu legislatívnu normu?",
+      "answer": "Nariadenie parížskej polície o balónoch (1784).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991902,
+      "updatedAt": 1792352991902
+    },
+    {
+      "id": "a6bcd8a5-334a-4edf-b755-8b2b8072f124",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.2 Ktorá konferencia bola prvým politickým úsilím o rozvoj medzinárodného leteckého práva?",
+      "answer": "Parížska diplomatická konferencia (1910).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991903,
+      "updatedAt": 1792352991903
+    },
+    {
+      "id": "a8c25a4e-11dc-4ca9-b45a-8d9bc9c9d521",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.3 Aký hlavný princíp ohľadom vzdušného priestoru ustanovil Parížsky dohovor z roku 1919?",
+      "answer": "Absolútnu a výlučnú suverenitu národa nad jeho vzdušným priestorom.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991904,
+      "updatedAt": 1792352991904
+    },
+    {
+      "id": "7253f858-bdb7-44bb-b299-858c859e9249",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.4 Ktorá medzinárodná organizácia vznikla ako výsledok Parížskeho dohovoru (1919)?",
+      "answer": "CINA.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991905,
+      "updatedAt": 1792352991905
+    },
+    {
+      "id": "19684fce-7db5-4233-ac56-ffe5ccff1517",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.5 Z akého dôvodu Madridský dohovor (1926) nikdy nevstúpil do platnosti?",
+      "answer": "Pre nedostatočný počet ratifikácií.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991906,
+      "updatedAt": 1792352991906
+    },
+    {
+      "id": "b416a3ed-3733-4465-8458-184bf98bf9e2",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.6 Čím sa Havanský dohovor (1928) výrazne líšil od Parížskeho dohovoru?",
+      "answer": "Neobsahoval žiadne jednotné technické normy.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991907,
+      "updatedAt": 1792352991907
+    },
+    {
+      "id": "55f30fa7-c8d5-45ad-92a2-63f02e030fc5",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.7 Na čo sa primárne zameriaval Varšavský dohovor z roku 1929?",
+      "answer": "Na zjednotenie pravidiel o zodpovednosti dopravcu v medzinárodnej preprave.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991908,
+      "updatedAt": 1792352991908
+    },
+    {
+      "id": "3c7660c8-67cd-4fda-9859-60b59b044eae",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.8 Ktorý dohovor je v súčasnosti považovaný za primárny zdroj leteckého práva?",
+      "answer": "Chicagský dohovor (1944).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991909,
+      "updatedAt": 1792352991909
+    },
+    {
+      "id": "ff4fa1bf-ecc9-4de4-8291-9929cc4dd787",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.9 Kto je depozitárom Chicagského dohovoru (1944)?",
+      "answer": "Vláda USA vo Washingtone D.C.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991910,
+      "updatedAt": 1792352991910
+    },
+    {
+      "id": "cb38bbe2-4bcb-4c2c-aa26-ea34fdb2aba1",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.10 Čo v histórii ICAO predstavovala organizácia PICAO?",
+      "answer": "Dočasnú organizáciu počas ratifikačného procesu Chicagského dohovoru.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991911,
+      "updatedAt": 1792352991911
+    },
+    {
+      "id": "7ec0fa8d-5caa-4955-9aaf-3be76900b36a",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.11 Koľko technických príloh (Annexov) má v súčasnosti Chicagský dohovor?",
+      "answer": "19.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991912,
+      "updatedAt": 1792352991912
+    },
+    {
+      "id": "6f0547ba-d78b-4bd2-a221-3ba3a5853f40",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.12 Ktorá letecká sloboda definuje právo preletieť cez územie iného štátu bez pristátia?",
+      "answer": "Prvá sloboda.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991913,
+      "updatedAt": 1792352991913
+    },
+    {
+      "id": "2b5c66e8-da3e-4360-bfdf-f0ce13766611",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.13 Čo umožňuje lietadlu Druhá sloboda vzduchu?",
+      "answer": "Pristať na území iného štátu na neprevádzkové (technické) účely.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991914,
+      "updatedAt": 1792352991914
+    },
+    {
+      "id": "6f8e819d-4b5d-41a4-9717-7d2ba1e630a2",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.14 Ktorý dohovor v roku 2003 nahradil zastaraný Varšavský systém zodpovednosti?",
+      "answer": "Montrealský dohovor (1999).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991915,
+      "updatedAt": 1792352991915
+    },
+    {
+      "id": "85e2b8cb-2b60-4267-b228-ff62734e48d0",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.15 Čo v letectve vyjadruje skratka SDR?",
+      "answer": "Menovú a účtovnú jednotku Medzinárodného menového fondu.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991916,
+      "updatedAt": 1792352991916
+    },
+    {
+      "id": "c4ed4674-379d-4f3a-912a-4a8cac2640c4",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.16 Na čo sa zameriava Tokijský dohovor z roku 1963?",
+      "answer": "Na priestupky a činy spáchané na palube lietadla.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991917,
+      "updatedAt": 1792352991917
+    },
+    {
+      "id": "6b95e6ef-d235-4c84-8b8f-337d8581a50e",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.17 Akú dôležitú právomoc priznal veliteľovi lietadla Tokijský dohovor (1963)?",
+      "answer": "Právo obmedziť osobu ohrozujúcu bezpečnosť alebo poriadok.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991918,
+      "updatedAt": 1792352991918
+    },
+    {
+      "id": "b04afa4b-b164-4bf2-9d9e-0483ad010bb9",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.18 Ktorý dohovor ako prvý definoval únos lietadla (nezákonné zmocnenie sa) ako trestný čin?",
+      "answer": "Haagsky dohovor (1970).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991919,
+      "updatedAt": 1792352991919
+    },
+    {
+      "id": "05864c07-a4ae-4d5a-b15d-ad1f2faa0a39",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.19 Čo je hlavným predmetom Montrealského dohovoru z roku 1971 (Dohovor o sabotáži)?",
+      "answer": "Potláčanie nezákonných činov proti bezpečnosti (napr. ničenie lietadiel).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991920,
+      "updatedAt": 1792352991920
+    },
+    {
+      "id": "6aa8e7c0-aa22-48d4-8948-60cb127ca97f",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.20 Na čo slúži Montrealský dohovor z roku 1991?",
+      "answer": "Na povinné chemické označovanie plastických výbušnín pri výrobe.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991921,
+      "updatedAt": 1792352991921
+    },
+    {
+      "id": "8ad312c1-eb79-41ab-bc91-afa97b1fcaa7",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.21 Ktorý dohovor reagoval na útoky z 11. septembra 2001 kriminalizáciou použitia lietadla ako zbrane?",
+      "answer": "Pekinský dohovor (2010).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991922,
+      "updatedAt": 1792352991922
+    },
+    {
+      "id": "8a2d063b-0bdf-4cf2-85ce-c360a6803caf",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.22 Ktorá technická príloha (Annex) k Chicagskému dohovoru sa zaoberá bezpečnosťou letectva (Security)?",
+      "answer": "Annex 17.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991923,
+      "updatedAt": 1792352991923
+    },
+    {
+      "id": "62ed92d1-ecec-4eeb-a57e-31b95b173fdf",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.23 Čo v letectve znamená pojem \"kabotáž\"?",
+      "answer": "Preprava medzi miestami na území jedného štátu cudzím dopravcom.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991924,
+      "updatedAt": 1792352991924
+    },
+    {
+      "id": "3c632f19-0b46-4838-ac7f-cb0f29bf226d",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.24 Prečo Spojené štáty americké neboli pozvané na diplomatickú konferenciu v roku 1910?",
+      "answer": "Neboli považované za schopné doletieť do Európy.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991925,
+      "updatedAt": 1792352991925
+    },
+    {
+      "id": "3a9a1e16-49c8-48b1-9b44-0145b1208025",
+      "groupId": "237b351f-7d6a-4fcb-abac-180c9d0eaf21",
+      "question": "2.25 V koľkých oficiálnych jazykoch je v súčasnosti Chicagský dohovor rovnako autentický?",
+      "answer": "V šiestich (anglický, francúzsky, španielsky, ruský, arabský, čínsky).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991926,
+      "updatedAt": 1792352991926
+    },
+    {
+      "id": "aeb85e7c-e526-4e78-8902-92abbbfe4a82",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.1 Čo v užšom a najčastejšie používanom zmysle slova zahŕňa pojem medzinárodná organizácia?",
+      "answer": "Len medzinárodné vládne organizácie.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991928,
+      "updatedAt": 1792352991928
+    },
+    {
+      "id": "f34c964e-8eab-46f3-a7b5-7f62c3c6564d",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.2 Ktorý typ organizácie sa vyznačuje tým, že sa členské krajiny vzdali časti svojich národných kompetencií v jej prospech?",
+      "answer": "Nadnárodná (nadštátna) organizácia.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991929,
+      "updatedAt": 1792352991929
+    },
+    {
+      "id": "b94e453d-1a67-4770-992b-8b22b949a61c",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.3 Ktorá z uvedených organizácií patrí podľa rozsahu pôsobnosti medzi univerzalistické?",
+      "answer": "ICAO.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991930,
+      "updatedAt": 1792352991930
+    },
+    {
+      "id": "08bfea88-cd6a-47f0-8f8a-cb9692c0f58b",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.4 Ktorá organizácia je v zdrojoch uvedená ako príklad hybridnej organizácie (vládny aj nevládny charakter)?",
+      "answer": "Medzinárodný červený kríž.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991931,
+      "updatedAt": 1792352991931
+    },
+    {
+      "id": "cf2bcfe9-d37b-4508-acb8-81705b4d969d",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.5 Na základe ktorého dohovoru bola v roku 1919 založená organizácia CINA?",
+      "answer": "Parížsky dohovor.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991932,
+      "updatedAt": 1792352991932
+    },
+    {
+      "id": "c4593e2e-8704-47df-98c6-8f3fca027598",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.6 Kto bol prvým a jediným generálnym tajomníkom počas celej existencie organizácie CINA/ICAN?",
+      "answer": "Albert Roper.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991933,
+      "updatedAt": 1792352991933
+    },
+    {
+      "id": "d6e06f98-1275-4889-b07d-2120de6d12b8",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.7 V ktorom meste sa nachádza sídlo Medzinárodnej organizácie pre civilné letectvo (ICAO)?",
+      "answer": "Montreal.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991934,
+      "updatedAt": 1792352991934
+    },
+    {
+      "id": "adf444ed-4b93-4025-80cb-81a012ba18d6",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.8 Koľko pracovných jazykov oficiálne používa organizácia ICAO?",
+      "answer": "6.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991935,
+      "updatedAt": 1792352991935
+    },
+    {
+      "id": "046f23df-bebb-4639-8a35-b4bd4fe412d7",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.9 Ktorý orgán ICAO je najvyšší a schádza sa najmenej raz za tri roky?",
+      "answer": "Zhromaždenie.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991936,
+      "updatedAt": 1792352991936
+    },
+    {
+      "id": "4ccb9695-dfb2-4094-8a0b-8ea09757b410",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.10 Koľko členských štátov tvorí Radu ICAO?",
+      "answer": "36.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991937,
+      "updatedAt": 1792352991937
+    },
+    {
+      "id": "46f25f85-0cf1-45b3-997c-d0e866a65bef",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.11 Ktorý úrad v rámci Sekretariátu ICAO riadi stratégie v oblasti bezpečnosti a kapacity letovej prevádzky?",
+      "answer": "Úrad pre leteckú navigáciu (ANB).",
+      "wrongAnswers": [],
+      "createdAt": 1792352991938,
+      "updatedAt": 1792352991938
+    },
+    {
+      "id": "15faa71a-0056-4544-b609-63775491ecda",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.12 Kde sídli regionálna kancelária ICAO pre Európu a severoatlantický región (EUR/NAT)?",
+      "answer": "Paríž.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991939,
+      "updatedAt": 1792352991939
+    },
+    {
+      "id": "95efee40-bf0f-473b-a73f-4c6919e2de80",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.13 V reakcii na akú technickú zmenu v letectve vznikla organizácia EUROCONTROL?",
+      "answer": "Zavádzanie prúdových lietadiel do prevádzky.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991940,
+      "updatedAt": 1792352991940
+    },
+    {
+      "id": "79f11a55-a590-47ce-8e5d-5d70dd838168",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.14 Ktorý orgán EUROCONTROL-u je najvyšším rozhodovacím orgánom a schvaľuje ročný rozpočet?",
+      "answer": "Stála komisia.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991941,
+      "updatedAt": 1792352991941
+    },
+    {
+      "id": "94a9ea6c-6361-48a6-b500-8a9e4b8502cf",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.15 Ktoré štáty tvoria Maastrichtskú koordinačnú skupinu (MCG) v rámci EUROCONTROL-u?",
+      "answer": "Belgicko, Nemecko, Luxembursko, Holandsko.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991942,
+      "updatedAt": 1792352991942
+    },
+    {
+      "id": "9958cf47-a776-4d9b-8ec8-62bd9fef521e",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.16 Kde sa nachádza sídlo Agentúry Európskej únie pre bezpečnosť letectva (EASA)?",
+      "answer": "Kolín nad Rýnom.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991943,
+      "updatedAt": 1792352991943
+    },
+    {
+      "id": "e751c697-5838-4edd-bcfa-eff089afb022",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.17 Aký je jediný pracovný jazyk agentúry EASA?",
+      "answer": "Angličtina.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991944,
+      "updatedAt": 1792352991944
+    },
+    {
+      "id": "9ea541c7-858a-4ac8-a65f-30626d0d134d",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.18 Na aké dlhé funkčné obdobie je vymenúvaný výkonný riaditeľ EASA?",
+      "answer": "5 rokov.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991945,
+      "updatedAt": 1792352991945
+    },
+    {
+      "id": "58183d8d-301a-491f-9fc2-f2d408f620b2",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.19 Ktorý orgán EASA rozhoduje o odvolaniach voči vyšetrovaniu podnikov či regulácii poplatkov?",
+      "answer": "Odvolacia rada.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991946,
+      "updatedAt": 1792352991946
+    },
+    {
+      "id": "b417f23f-ac9e-46ad-a2f0-67f103eda01f",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.20 Čo je hlavným poslaním Európskej konferencie pre civilné letectvo (ECAC)?",
+      "answer": "Podpora rozvoja bezpečného a udržateľného európskeho systému leteckej dopravy.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991947,
+      "updatedAt": 1792352991947
+    },
+    {
+      "id": "1fad1908-e01d-4946-ac50-861f4cc26823",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.21 Ako často sa pravidelne schádza Plenárne zasadnutie ECAC v Štrasburgu?",
+      "answer": "Raz za tri roky.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991948,
+      "updatedAt": 1792352991948
+    },
+    {
+      "id": "69750048-8dd1-495a-8ca3-490ba0f9b751",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.22 Ktorá organizácia je špecializovanou agentúrou Africkej únie pre civilné letectvo?",
+      "answer": "AFCAC.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991949,
+      "updatedAt": 1792352991949
+    },
+    {
+      "id": "5c67e834-3650-44a3-ba8e-1b5f200fa1ea",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.23 V ktorom meste sídlia organizácie AFCAC aj ASECNA?",
+      "answer": "Dakar.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991950,
+      "updatedAt": 1792352991950
+    },
+    {
+      "id": "89aa2037-b43d-431b-96a0-afc2136b0441",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.24 Aký je pracovný jazyk organizácie ASECNA?",
+      "answer": "Francúzština.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991951,
+      "updatedAt": 1792352991951
+    },
+    {
+      "id": "8852776a-f9f6-43bd-96da-175eae9ad796",
+      "groupId": "95549156-7a9b-466f-a112-86f175db21a7",
+      "question": "3.25 Ktorý orgán je najvyšším v organizácii ASECNA?",
+      "answer": "Výbor ministrov.",
+      "wrongAnswers": [],
+      "createdAt": 1792352991952,
+      "updatedAt": 1792352991952
+    }
+  ]
+}
