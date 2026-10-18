@@ -4,23 +4,18 @@ App.views.flashcards = async function (root, params) {
   const { shuffle } = App.utils;
   const repo = App.repo;
 
-  const group = await repo.getGroup(params.id);
-  if (!group) return App.views.notFound(root, "Группа не найдена. Возможно, она была удалена.");
-  const subject = await repo.getSubject(group.subjectId);
-  const cards = await repo.listCards(group.id);
-  const groupHref = "#/group/" + encodeURIComponent(group.id);
+  const set = await App.study.load(params);
+  if (!set) return App.views.notFound(root, "Не найдено. Возможно, это было удалено.");
+  const cards = set.cards;
+  const group = { name: set.title };
+  const groupHref = set.backHref;
 
-  const nav = crumbs([
-    { label: "Предметы", href: "#/" },
-    { label: subject ? subject.name : "Предмет", href: subject ? "#/subject/" + encodeURIComponent(subject.id) : "#/" },
-    { label: group.name, href: groupHref },
-    { label: "Флеш-карточки" },
-  ]);
+  const nav = crumbs(set.trail.concat([{ label: "Флеш-карточки" }]));
 
   if (!cards.length) {
-    mount(root, nav, empty("В группе нет карточек",
+    mount(root, nav, empty("Здесь нет карточек",
       "Добавьте карточки, чтобы начать обучение.",
-      h("a", { class: "btn btn--primary", href: groupHref }, "К группе")));
+      h("a", { class: "btn btn--primary", href: groupHref }, set.backLabel)));
     return;
   }
 
@@ -104,15 +99,15 @@ App.views.flashcards = async function (root, params) {
     mount(root, nav, h("div", { class: "study" },
       h("div", { class: "result" },
         h("div", { class: "result__big" }, known + " из " + total),
-        h("div", { class: "result__text" }, "Группа пройдена. Отмечено «Знал»"),
+        h("div", { class: "result__text" }, "Все карточки пройдены. Отмечено «Знал»"),
         h("div", { class: "result__stats" },
           h("div", { class: "stat stat--ok" }, h("div", { class: "stat__value" }, String(known)), h("div", { class: "stat__label" }, "Знал")),
           h("div", { class: "stat stat--bad" }, h("div", { class: "stat__value" }, String(unknown)), h("div", { class: "stat__label" }, "Не знал")),
           h("div", { class: "stat" }, h("div", { class: "stat__value" }, String(skipped)), h("div", { class: "stat__label" }, "Без отметки"))),
         h("div", { class: "study__actions" },
-          btn("Повторить группу", () => start(state.shuffled), "btn--primary"),
+          btn("Повторить", () => start(state.shuffled), "btn--primary"),
           btn("Повторить вперемешку", () => start(true)),
-          h("a", { class: "btn", href: groupHref }, "К группе")))));
+          h("a", { class: "btn", href: groupHref }, set.backLabel)))));
   }
 
   start(false);

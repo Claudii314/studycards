@@ -4,27 +4,22 @@ App.views.quiz = async function (root, params) {
   const { shuffle, countText, FORMS } = App.utils;
   const repo = App.repo;
 
-  const group = await repo.getGroup(params.id);
-  if (!group) return App.views.notFound(root, "Группа не найдена. Возможно, она была удалена.");
-  const subject = await repo.getSubject(group.subjectId);
-  const cards = await repo.listCards(group.id);
+  const set = await App.study.load(params);
+  if (!set) return App.views.notFound(root, "Не найдено. Возможно, это было удалено.");
+  const cards = set.cards;
   const quizCards = cards.filter(repo.isQuizCard);
-  const groupHref = "#/group/" + encodeURIComponent(group.id);
+  const group = { name: set.title };
+  const groupHref = set.backHref;
 
-  const nav = crumbs([
-    { label: "Предметы", href: "#/" },
-    { label: subject ? subject.name : "Предмет", href: subject ? "#/subject/" + encodeURIComponent(subject.id) : "#/" },
-    { label: group.name, href: groupHref },
-    { label: "Тест" },
-  ]);
+  const nav = crumbs(set.trail.concat([{ label: "Тест" }]));
 
   if (!quizCards.length) {
     const text = cards.length
-      ? "В группе " + countText(cards.length, FORMS.card) + (cards.length === 1 ? ", но у неё" : ", но ни у одной") + " нет трёх неправильных вариантов. " +
+      ? set.where + " " + countText(cards.length, FORMS.card) + (cards.length === 1 ? ", но у неё" : ", но ни у одной") + " нет трёх неправильных вариантов. " +
         "Откройте карточку через «Изменить» и заполните раздел «Варианты для теста»."
-      : "В группе нет карточек. Добавьте карточку с правильным ответом и тремя неправильными вариантами.";
+      : set.where + " нет карточек. Добавьте карточку с правильным ответом и тремя неправильными вариантами.";
     mount(root, nav, empty("Недостаточно карточек для теста", text,
-      h("a", { class: "btn btn--primary", href: groupHref }, "К группе")));
+      h("a", { class: "btn btn--primary", href: groupHref }, set.backLabel)));
     return;
   }
 
@@ -113,7 +108,7 @@ App.views.quiz = async function (root, params) {
           h("div", { class: "stat stat--bad" }, h("div", { class: "stat__value" }, String(total - state.correct)), h("div", { class: "stat__label" }, "Ошибок"))),
         h("div", { class: "study__actions" },
           btn("Пройти ещё раз", start, "btn--primary"),
-          h("a", { class: "btn", href: groupHref }, "К группе")))));
+          h("a", { class: "btn", href: groupHref }, set.backLabel)))));
   }
 
   start();

@@ -54,6 +54,21 @@ App.views.subject = async function (root, params) {
       countText(groups.length, FORMS.group) + ", " + countText(total, FORMS.card),
       editable ? [btn("Добавить группу", addGroup, "btn--primary"), btn("Переименовать", renameSubject)] : null),
   ];
+  const quizTotal = groups.reduce((s, g) => s + g.quizCount, 0);
+  if (groups.length > 1 && total > 0) {
+    const sid = encodeURIComponent(subject.id);
+    nodes.push(h("div", { class: "modes modes--spaced" },
+      h("div", { class: "mode" },
+        h("div", { class: "mode__title" }, "Учить весь предмет"),
+        h("div", { class: "mode__text" }, "Флеш-карточки из всех групп сразу: " + countText(total, FORMS.card) + "."),
+        btn("Учить все карточки", () => App.router.go("#/subject/" + sid + "/flashcards"), "btn--primary")),
+      h("div", { class: "mode" },
+        h("div", { class: "mode__title" }, "Тест по всему предмету"),
+        h("div", { class: "mode__text" }, quizTotal
+          ? "Вопросы из всех групп вперемешку: " + countText(quizTotal, FORMS.question) + "."
+          : "Нужна хотя бы одна карточка с тремя неправильными вариантами."),
+        btn("Пройти тест", () => App.router.go("#/subject/" + sid + "/quiz"), "btn--primary", { disabled: !quizTotal }))));
+  }
   if (subject.shared && !editable) {
     nodes.push(h("p", { class: "notice notice--spaced" }, "Это общий предмет с сайта. Его группы и карточки обновляются автоматически, когда автор публикует изменения."));
   }

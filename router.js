@@ -4,8 +4,10 @@ App.router = (function () {
     { re: /^#?\/?$/, view: "subjects", nav: "subjects" },
     { re: /^#\/subject\/([^/]+)$/, view: "subject", nav: "subjects" },
     { re: /^#\/group\/([^/]+)$/, view: "group", nav: "subjects" },
-    { re: /^#\/group\/([^/]+)\/flashcards$/, view: "flashcards", nav: "subjects" },
-    { re: /^#\/group\/([^/]+)\/quiz$/, view: "quiz", nav: "subjects" },
+    { re: /^#\/group\/([^/]+)\/flashcards$/, view: "flashcards", nav: "subjects", scope: "group" },
+    { re: /^#\/group\/([^/]+)\/quiz$/, view: "quiz", nav: "subjects", scope: "group" },
+    { re: /^#\/subject\/([^/]+)\/flashcards$/, view: "flashcards", nav: "subjects", scope: "subject" },
+    { re: /^#\/subject\/([^/]+)\/quiz$/, view: "quiz", nav: "subjects", scope: "subject" },
     { re: /^#\/backup$/, view: "backup", nav: "backup" },
     { re: /^#\/author$/, view: "author", nav: "backup" },
   ];
@@ -14,7 +16,7 @@ App.router = (function () {
   function match(hash) {
     for (const r of routes) {
       const m = hash.match(r.re);
-      if (m) return { route: r, params: { id: m[1] ? decodeURIComponent(m[1]) : undefined } };
+      if (m) return { route: r, params: { id: m[1] ? decodeURIComponent(m[1]) : undefined, scope: r.scope } };
     }
     return null;
   }

@@ -152,6 +152,7 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 .mode__title { font-weight: 650; font-size: 17px; }
 .mode__text { color: var(--muted); font-size: 14px; flex: 1; }
 .mode .btn { margin-top: 10px; align-self: flex-start; }
+.modes--spaced { margin-bottom: 22px; }
 
 /* ===== Карточки в списке ===== */
 .cards { display: grid; gap: 10px; }
