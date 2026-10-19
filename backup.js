@@ -1,7 +1,7 @@
-/* Экспорт и импорт резервной копии в формате JSON. */
+
 App.backup = (function () {
-  const FORMAT = "studycards-backup";        // личная резервная копия
-  const SHARED_FORMAT = "studycards-shared"; // общий набор на сайте
+  const FORMAT = "studycards-backup";       
+  const SHARED_FORMAT = "studycards-shared"; 
   const VERSION = 1;
   const { normalizeText } = App.utils;
 
@@ -17,7 +17,6 @@ App.backup = (function () {
     };
   }
 
-  /** Скачивает файл резервной копии. Возвращает объект со статистикой. */
   async function download() {
     const payload = await buildExport();
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
@@ -32,10 +31,6 @@ App.backup = (function () {
     return payload;
   }
 
-  /**
-   * Проверяет структуру файла. Возвращает { ok, errors, data }.
-   * data — нормализованные записи, готовые к записи в базу.
-   */
   function validate(raw, expectedFormat) {
     const format = expectedFormat || FORMAT;
     const errors = [];
@@ -120,8 +115,6 @@ App.backup = (function () {
       r.readAsText(file, "utf-8");
     });
   }
-
-  /** Читает и проверяет файл. Ничего не записывает. */
   async function parseFile(file) {
     if (!file) return { ok: false, errors: ["Файл не выбран."] };
     let text;
@@ -130,8 +123,6 @@ App.backup = (function () {
     try { raw = JSON.parse(text); } catch (e) { return { ok: false, errors: ["Файл не является корректным JSON."] }; }
     return validate(raw);
   }
-
-  /** Общий набор для публикации на сайт. */
   async function buildShared() {
     const data = await App.repo.exportShared();
     return {
