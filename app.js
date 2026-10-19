@@ -1,4 +1,4 @@
-
+ 
 (async function () {
   try {
     await App.db.open();
