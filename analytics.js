@@ -1,11 +1,6 @@
-/*
- * Обезличенная статистика посещений через GoatCounter (бесплатно, без cookies).
- * Статистику видит только владелец кабинета на goatcounter.com.
- * Чтобы включить, впишите свой код из GoatCounter в CODE (например "studycards-lp").
- * Пустой CODE — статистика выключена.
- */
+
 App.analytics = (function () {
-  const CODE = "";
+  const CODE = "studycards-lp";
 
   const SKIP_KEY = "skipgc"; // этот же ключ проверяет сам GoatCounter
   let loaded = false;
