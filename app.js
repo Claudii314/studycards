@@ -1,4 +1,4 @@
-/* Точка входа: база данных, отрисовка, загрузка общего набора с сайта, офлайн-режим. */
+
 (async function () {
   try {
     await App.db.open();
@@ -12,7 +12,7 @@
     navigator.storage.persist().catch(() => {});
   }
 
-  /* Полоса «Режим автора» под шапкой */
+ 
   const bar = document.getElementById("editor-bar");
   function updateBar() {
     const { h, mount } = App.ui;
@@ -29,11 +29,11 @@
 
   await App.router.init();
 
-  /* Общий набор: после первой отрисовки, чтобы приложение открывалось сразу и без интернета */
+ 
   try {
     const r = await App.sync.pull();
     if (r.status === "updated") {
-      // Не прерываем обучение и не стираем введённое в формы: там изменения появятся при следующем открытии
+     
       const busy = /\/(flashcards|quiz)$/.test(location.hash) || location.hash === "#/author" || location.hash === "#/backup" ||
         document.querySelector("dialog[open]");
       if (!busy) App.router.render();
@@ -45,7 +45,7 @@
     console.warn("Не удалось загрузить общий набор:", e);
   }
 
-  /* Офлайн-режим и установка как приложения (работает только на сайте, не при открытии файла) */
+
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
     navigator.serviceWorker.register("sw.js").catch((e) => console.warn("Service worker:", e));
   }
