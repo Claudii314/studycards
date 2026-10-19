@@ -1,5 +1,5 @@
 App.analytics = function() {
-  const CODE = "";
+  const CODE = "studycards-lp";
   const SKIP_KEY = "skipgc";
   let loaded = false;
   let lastHash = null;
