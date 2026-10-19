@@ -1,28 +1,23 @@
-
-App.analytics = (function () {
-  const CODE = "studycards-lp";
-
-  const SKIP_KEY = "skipgc"; 
+App.analytics = function() {
+  const CODE = "";
+  const SKIP_KEY = "skipgc";
   let loaded = false;
   let lastHash = null;
-
   function enabled() {
     return !!CODE && location.protocol.startsWith("http");
   }
-
   function isSelfExcluded() {
-    try { return localStorage.getItem(SKIP_KEY) === "t"; } catch (e) { return false; }
+    try {
+      return localStorage.getItem(SKIP_KEY) === "t";
+    } catch (e) {
+      return false;
+    }
   }
-
- 
   function setSelfExcluded(on) {
     try {
-      if (on) localStorage.setItem(SKIP_KEY, "t");
-      else localStorage.removeItem(SKIP_KEY);
-    } catch (e) { /* хранилище недоступно */ }
+      if (on) localStorage.setItem(SKIP_KEY, "t"); else localStorage.removeItem(SKIP_KEY);
+    } catch (e) {}
   }
-
-
   function pathFor(hash) {
     const h = hash || "#/";
     if (/^#?\/?$/.test(h)) return "/";
@@ -36,11 +31,12 @@ App.analytics = (function () {
     if (h === "#/author") return "/autor";
     return "/ine";
   }
-
   function load() {
     if (!enabled() || loaded) return;
     loaded = true;
-    window.goatcounter = { no_onload: true }; 
+    window.goatcounter = {
+      no_onload: true
+    };
     const s = document.createElement("script");
     s.async = true;
     s.src = "https://gc.zgo.at/count.js";
@@ -48,8 +44,6 @@ App.analytics = (function () {
     s.onload = () => track(true);
     document.head.appendChild(s);
   }
-
-
   function track(force) {
     if (!enabled() || isSelfExcluded()) return;
     const gc = window.goatcounter;
@@ -58,8 +52,18 @@ App.analytics = (function () {
     lastHash = location.hash;
     const heading = document.querySelector("#app h1, #app .study__title");
     const path = pathFor(location.hash);
-    gc.count({ path, title: heading ? heading.textContent.trim() : path });
+    gc.count({
+      path: path,
+      title: heading ? heading.textContent.trim() : path
+    });
   }
-
-  return { enabled, load, track, isSelfExcluded, setSelfExcluded, pathFor, CODE };
-})();
+  return {
+    enabled: enabled,
+    load: load,
+    track: track,
+    isSelfExcluded: isSelfExcluded,
+    setSelfExcluded: setSelfExcluded,
+    pathFor: pathFor,
+    CODE: CODE
+  };
+}();

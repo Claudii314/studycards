@@ -1,9 +1,4 @@
-/*
- * Набор карточек для режимов обучения: одна группа или весь предмет (все его группы сразу).
- * Режимы флеш-карточек и теста получают отсюда карточки, заголовок и навигацию.
- */
-App.study = (function () {
-  /** params: { id, scope: "group" | "subject" }. Возвращает null, если группа/предмет не найдены. */
+App.study = function() {
   async function load(params) {
     const repo = App.repo;
     if (params.scope === "subject") {
@@ -11,13 +6,22 @@ App.study = (function () {
       if (!subject) return null;
       const groups = await repo.listGroups(subject.id);
       const cards = [];
-      for (const g of groups) cards.push(...(await repo.listCards(g.id)));
+      for (const g of groups) cards.push(...await repo.listCards(g.id));
       const backHref = "#/subject/" + encodeURIComponent(subject.id);
       return {
         title: subject.name + ": все группы",
-        cards, backHref, backLabel: "К предмету",
+        scope: "subject",
+        cards: cards,
+        backHref: backHref,
+        backLabel: "К предмету",
         where: "В этом предмете",
-        trail: [{ label: "Предметы", href: "#/" }, { label: subject.name, href: backHref }],
+        trail: [ {
+          label: "Предметы",
+          href: "#/"
+        }, {
+          label: subject.name,
+          href: backHref
+        } ]
       };
     }
     const group = await repo.getGroup(params.id);
@@ -26,15 +30,29 @@ App.study = (function () {
     const backHref = "#/group/" + encodeURIComponent(group.id);
     return {
       title: group.name,
-      cards: await repo.listCards(group.id), backHref, backLabel: "К группе",
+      scope: "group",
+      cards: await repo.listCards(group.id),
+      backHref: backHref,
+      backLabel: "К группе",
       where: "В группе",
-      trail: [
-        { label: "Предметы", href: "#/" },
-        { label: subject ? subject.name : "Предмет", href: subject ? "#/subject/" + encodeURIComponent(subject.id) : "#/" },
-        { label: group.name, href: backHref },
-      ],
+      trail: [ {
+        label: "Предметы",
+        href: "#/"
+      }, {
+        label: subject ? subject.name : "Предмет",
+        href: subject ? "#/subject/" + encodeURIComponent(subject.id) : "#/"
+      }, {
+        label: group.name,
+        href: backHref
+      } ]
     };
   }
-
-  return { load };
-})();
+  function stripNumber(text) {
+    const stripped = String(text).replace(/^\s*(\d+(\.\d+)+\.?|\d+\.)\s+/, "");
+    return stripped || text;
+  }
+  return {
+    load: load,
+    stripNumber: stripNumber
+  };
+}();
