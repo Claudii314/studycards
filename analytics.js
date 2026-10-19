@@ -1,13 +1,8 @@
-/*
- * Обезличенная статистика посещений через GoatCounter (бесплатно, без cookies).
- * Статистику видит только владелец кабинета на goatcounter.com.
- * Чтобы включить, впишите свой код из GoatCounter в CODE (например "studycards-lp").
- * Пустой CODE — статистика выключена.
- */
-App.analytics = (function () {
-  const CODE = "";
 
-  const SKIP_KEY = "skipgc"; // этот же ключ проверяет сам GoatCounter
+App.analytics = (function () {
+  const CODE = "studycards-lp";
+
+  const SKIP_KEY = "skipgc"; 
   let loaded = false;
   let lastHash = null;
 
@@ -19,7 +14,7 @@ App.analytics = (function () {
     try { return localStorage.getItem(SKIP_KEY) === "t"; } catch (e) { return false; }
   }
 
-  /** Не считать посещения с этого устройства (для автора). */
+ 
   function setSelfExcluded(on) {
     try {
       if (on) localStorage.setItem(SKIP_KEY, "t");
@@ -27,7 +22,7 @@ App.analytics = (function () {
     } catch (e) { /* хранилище недоступно */ }
   }
 
-  /** Понятный путь без внутренних идентификаторов. */
+
   function pathFor(hash) {
     const h = hash || "#/";
     if (/^#?\/?$/.test(h)) return "/";
@@ -45,7 +40,7 @@ App.analytics = (function () {
   function load() {
     if (!enabled() || loaded) return;
     loaded = true;
-    window.goatcounter = { no_onload: true }; // считаем сами: у сайта переходы внутри одной страницы
+    window.goatcounter = { no_onload: true }; 
     const s = document.createElement("script");
     s.async = true;
     s.src = "https://gc.zgo.at/count.js";
@@ -54,7 +49,7 @@ App.analytics = (function () {
     document.head.appendChild(s);
   }
 
-  /** Отмечает просмотр текущего экрана (один раз на каждый переход). */
+
   function track(force) {
     if (!enabled() || isSelfExcluded()) return;
     const gc = window.goatcounter;
