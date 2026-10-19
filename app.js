@@ -24,7 +24,8 @@
       location.hash === "#/author" ? null : h("a", { href: "#/author" }, dirty ? "Опубликовать" : "Для автора")));
   }
   App.editor.onChange(updateBar);
-  App.onRendered = updateBar;
+  App.onRendered = () => { updateBar(); App.analytics.track(); };
+  App.analytics.load();
 
   await App.router.init();
 

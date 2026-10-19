@@ -3,13 +3,13 @@
  * Все файлы: сначала сеть (обновления видны сразу), без сети — последняя сохранённая копия.
  * При изменении файлов приложения увеличьте номер VERSION, чтобы у всех обновился кэш.
  */
-const VERSION = "v5";
+const VERSION = "v6";
 const CACHE = "studycards-" + VERSION;
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "styles.css",
   "icon-192.png", "icon-512.png", "icon-maskable-512.png",
   "utils.js", "db.js", "editor.js", "repo.js", "backup.js", "github.js", "sync.js",
-  "study.js", "ui.js", "router.js", "app.js",
+  "study.js", "analytics.js", "ui.js", "router.js", "app.js",
   "view-subjects.js", "view-subject.js", "view-group.js", "view-flashcards.js",
   "view-quiz.js", "view-backup.js", "view-author.js",
   "shared.json",

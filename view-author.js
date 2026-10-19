@@ -140,6 +140,17 @@ App.views.author = async function (root) {
   const field = (label, control, hint) => h("label", { class: "field" },
     h("span", { class: "field__label" }, label), control, hint ? h("span", { class: "field__hint" }, hint) : null);
 
+  const statsPanel = h("div", { class: "panel" },
+    h("div", { class: "panel__title" }, "Статистика посещений"),
+    App.analytics.enabled()
+      ? [
+          h("p", { class: "panel__text" }, "Статистика смотрится в вашем кабинете GoatCounter: https://" + App.analytics.CODE + ".goatcounter.com. " +
+            (App.analytics.isSelfExcluded() ? "Посещения с этого устройства не учитываются." : "Посещения с этого устройства сейчас учитываются.")),
+          btn(App.analytics.isSelfExcluded() ? "Снова учитывать это устройство" : "Не учитывать мои посещения с этого устройства",
+            () => { App.analytics.setSelfExcluded(!App.analytics.isSelfExcluded()); toast("Сохранено"); rerender(); }),
+        ]
+      : h("p", { class: "panel__text" }, "Выключена. Как включить — в README.md, раздел «Статистика посещений»."));
+
   mount(root,
     crumbs([{ label: "Предметы", href: "#/" }, { label: "Для автора" }]),
     pageHead("Для автора", "Здесь автор редактирует и публикует общие материалы, которые видят все пользователи сайта."),
@@ -173,5 +184,6 @@ App.views.author = async function (root) {
       ghStatus,
       h("div", { class: "page-head__actions", style: "margin-top:10px" },
         btn("Сохранить и проверить", saveGithub, "btn--primary"),
-        editor.hasGithub() ? btn("Удалить токен с устройства", forgetToken, "btn--danger") : null)) : null);
+        editor.hasGithub() ? btn("Удалить токен с устройства", forgetToken, "btn--danger") : null)) : null,
+    statsPanel);
 };
