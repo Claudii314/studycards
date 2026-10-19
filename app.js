@@ -33,8 +33,10 @@
   try {
     const r = await App.sync.pull();
     if (r.status === "updated") {
-      // Не прерываем начатое обучение: в режимах карточек и теста изменения появятся при следующем запуске
-      if (!/\/(flashcards|quiz)$/.test(location.hash)) App.router.render();
+      // Не прерываем обучение и не стираем введённое в формы: там изменения появятся при следующем открытии
+      const busy = /\/(flashcards|quiz)$/.test(location.hash) || location.hash === "#/author" || location.hash === "#/backup" ||
+        document.querySelector("dialog[open]");
+      if (!busy) App.router.render();
       App.ui.toast("Общие карточки обновлены");
     } else if (r.status === "invalid") {
       console.warn("Общий набор на сайте повреждён", r.errors);

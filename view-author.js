@@ -15,25 +15,20 @@ App.views.author = async function (root) {
 
   /* ---------- Режим автора ---------- */
 
-  async function toggle() {
-    if (on) {
-      if (meta.dirty) {
-        const ok = await confirm({
-          title: "Выключить режим автора?",
-          message: ["На этом устройстве есть неопубликованные изменения общего набора.",
-            "Если выключить режим автора, они будут отменены и заменены версией с сайта."],
-          confirmText: "Отменить изменения и выключить", danger: true,
-        });
-        if (!ok) return;
-      }
-      editor.setEnabled(false);
-      if (meta.dirty) await guard(() => App.sync.pull({ force: true }));
-      toast("Режим автора выключен");
-    } else {
-      editor.setEnabled(true);
-      toast("Режим автора включён");
-      if (editor.hasGithub()) await guard(() => App.sync.pull());
+  /** Выход из режима автора. Токен остаётся на устройстве, чтобы снова войти одной кнопкой. */
+  async function logout() {
+    if (meta.dirty) {
+      const ok = await confirm({
+        title: "Выйти из режима автора?",
+        message: ["На этом устройстве есть неопубликованные изменения общего набора.",
+          "После выхода они будут отменены и заменены версией с сайта."],
+        confirmText: "Отменить изменения и выйти", danger: true,
+      });
+      if (!ok) return;
     }
+    editor.setEnabled(false);
+    if (meta.dirty) await guard(() => App.sync.pull({ force: true }));
+    toast("Вы вышли из режима автора");
     rerender();
   }
 
@@ -63,7 +58,7 @@ App.views.author = async function (root) {
       return;
     }
     ghStatus.className = "field__hint";
-    ghStatus.textContent = "Проверяю доступ…";
+    ghStatus.textContent = "Проверяю токен…";
     try {
       const canWrite = await App.github.checkAccess(cfg);
       if (!canWrite) {
@@ -72,7 +67,10 @@ App.views.author = async function (root) {
         return;
       }
       editor.setGithub(cfg);
-      toast("Подключение сохранено");
+      const wasOn = editor.isEnabled();
+      editor.setEnabled(true);
+      toast(wasOn ? "Подключение сохранено" : "Режим автора включён");
+      if (!wasOn) await guard(() => App.sync.pull());
       rerender();
     } catch (e) {
       ghStatus.className = "field__error";
@@ -82,9 +80,15 @@ App.views.author = async function (root) {
 
   async function forgetToken() {
     const ok = await confirm({ title: "Удалить токен с этого устройства?",
-      message: "Чтобы снова публиковать с этого устройства, токен нужно будет ввести заново.", confirmText: "Удалить токен", danger: true });
+      message: [
+        "Режим автора на этом устройстве выключится. Чтобы снова войти, токен нужно будет ввести заново.",
+        meta.dirty ? "Неопубликованные изменения будут отменены." : "",
+      ].filter(Boolean),
+      confirmText: "Удалить токен", danger: true });
     if (!ok) return;
     editor.setGithub(Object.assign(editor.github(), { token: "" }));
+    editor.setEnabled(false);
+    if (meta.dirty) await guard(() => App.sync.pull({ force: true }));
     toast("Токен удалён");
     rerender();
   }
@@ -140,7 +144,7 @@ App.views.author = async function (root) {
   const field = (label, control, hint) => h("label", { class: "field" },
     h("span", { class: "field__label" }, label), control, hint ? h("span", { class: "field__hint" }, hint) : null);
 
-  const statsPanel = h("div", { class: "panel" },
+  const statsPanel = on ? h("div", { class: "panel" },
     h("div", { class: "panel__title" }, "Статистика посещений"),
     App.analytics.enabled()
       ? [
@@ -149,41 +153,54 @@ App.views.author = async function (root) {
           btn(App.analytics.isSelfExcluded() ? "Снова учитывать это устройство" : "Не учитывать мои посещения с этого устройства",
             () => { App.analytics.setSelfExcluded(!App.analytics.isSelfExcluded()); toast("Сохранено"); rerender(); }),
         ]
-      : h("p", { class: "panel__text" }, "Выключена. Как включить — в README.md, раздел «Статистика посещений»."));
+      : h("p", { class: "panel__text" }, "Выключена. Как включить — в README.md, раздел «Статистика посещений».")) : null;
+
+  const githubForm = [
+    field("Владелец (логин GitHub)", f.owner),
+    field("Репозиторий", f.repo),
+    field("Ветка", f.branch, "Обычно main."),
+    field("Токен доступа", f.token, "Не передавайте токен другим людям. На чужом компьютере удалите его после работы."),
+    ghStatus,
+  ];
+
+  if (!on) {
+    mount(root,
+      crumbs([{ label: "Предметы", href: "#/" }, { label: "Для автора" }]),
+      pageHead("Для автора", "Вход для автора общих материалов."),
+      h("div", { class: "panel" },
+        h("div", { class: "panel__title" }, "Вход автора"),
+        h("p", { class: "panel__text" }, "Режим автора включается только с токеном GitHub, у которого есть право записи в репозиторий сайта. Без него редактировать общие материалы нельзя."),
+        githubForm,
+        h("div", { class: "page-head__actions", style: "margin-top:10px" },
+          btn("Войти как автор", saveGithub, "btn--primary"))));
+    return;
+  }
 
   mount(root,
     crumbs([{ label: "Предметы", href: "#/" }, { label: "Для автора" }]),
     pageHead("Для автора", "Здесь автор редактирует и публикует общие материалы, которые видят все пользователи сайта."),
 
     h("div", { class: "panel" },
-      h("div", { class: "panel__title" }, "Режим автора " + (on ? "включён" : "выключен")),
-      h("p", { class: "panel__text" }, on
-        ? "Общие предметы, группы и карточки можно менять. Изменения видны только на этом устройстве, пока вы их не опубликуете."
-        : "Включите, чтобы редактировать общие материалы. Без подключения к GitHub правки останутся только на этом устройстве."),
-      btn(on ? "Выключить режим автора" : "Включить режим автора", toggle, on ? "" : "btn--primary")),
+      h("div", { class: "panel__title" }, "Режим автора включён"),
+      h("p", { class: "panel__text" }, "Общие предметы, группы и карточки можно менять. Изменения видны только на этом устройстве, пока вы их не опубликуете."),
+      btn("Выйти из режима автора", logout)),
 
-    on ? h("div", { class: "panel" },
+    h("div", { class: "panel" },
       h("div", { class: "panel__title" }, "Общий набор"),
       h("p", { class: "panel__text" },
         "На устройстве: " + summary + ". Версия с сайта: " + fmt(meta.publishedAt) + ". ",
         meta.dirty ? h("strong", null, "Есть неопубликованные изменения.") : "Неопубликованных изменений нет."),
       h("div", { class: "page-head__actions" },
-        btn("Опубликовать изменения", () => publish(false), "btn--primary", { disabled: !meta.dirty || !editor.hasGithub() }),
-        btn("Загрузить с сайта", pullFromSite)),
-      !editor.hasGithub() ? h("p", { class: "field__hint", style: "margin-top:10px" }, "Чтобы публиковать, подключите GitHub ниже.") : null) : null,
+        btn("Опубликовать изменения", () => publish(false), "btn--primary", { disabled: !meta.dirty }),
+        btn("Загрузить с сайта", pullFromSite))),
 
-    on ? h("div", { class: "panel" },
+    h("div", { class: "panel" },
       h("div", { class: "panel__title" }, "Подключение к GitHub"),
-      h("p", { class: "panel__text" }, editor.hasGithub()
-        ? "Подключено: " + gh.owner + "/" + gh.repo + " (ветка " + gh.branch + "). Токен хранится только на этом устройстве."
-        : "Укажите репозиторий сайта и токен с правом записи. Как получить токен — в README.md, раздел «Публикация сайта»."),
-      field("Владелец (логин GitHub)", f.owner),
-      field("Репозиторий", f.repo),
-      field("Ветка", f.branch, "Обычно main."),
-      field("Токен доступа", f.token, "Не передавайте токен другим людям. На чужом компьютере удалите его после работы."),
-      ghStatus,
+      h("p", { class: "panel__text" }, "Подключено: " + gh.owner + "/" + gh.repo + " (ветка " + gh.branch + "). Токен хранится только на этом устройстве."),
+      githubForm,
       h("div", { class: "page-head__actions", style: "margin-top:10px" },
         btn("Сохранить и проверить", saveGithub, "btn--primary"),
-        editor.hasGithub() ? btn("Удалить токен с устройства", forgetToken, "btn--danger") : null)) : null,
+        btn("Удалить токен с устройства", forgetToken, "btn--danger"))),
+
     statsPanel);
 };

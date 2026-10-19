@@ -3,7 +3,7 @@
  * Все файлы: сначала сеть (обновления видны сразу), без сети — последняя сохранённая копия.
  * При изменении файлов приложения увеличьте номер VERSION, чтобы у всех обновился кэш.
  */
-const VERSION = "v6";
+const VERSION = "v7";
 const CACHE = "studycards-" + VERSION;
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "styles.css",

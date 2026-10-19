@@ -63,8 +63,7 @@ App.views.backup = async function (root) {
       h("p", { class: "panel__text" }, "Загрузить данные из файла резервной копии. Перед заменой файл проверяется, и вы увидите, что будет загружено."),
       btn("Выбрать файл…", () => fileInput.click()),
       fileInput,
-      h("div", { style: "margin-top:14px" }, importStatus)),
-    h("p", { class: "muted small-link" }, "Вы автор общих материалов? ", h("a", { href: "#/author" }, "Для автора")));
+      h("div", { style: "margin-top:14px" }, importStatus)));
 };
 
 App.views.notFound = function (root, message) {

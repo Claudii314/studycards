@@ -24,7 +24,8 @@ App.editor = (function () {
     } catch (e) { /* хранилище недоступно — настройки не сохранятся */ }
   }
 
-  function isEnabled() { return read(KEY_MODE, false) === true; }
+  /** Режим автора действует только вместе с сохранённым токеном GitHub (он проверяется при входе). */
+  function isEnabled() { return read(KEY_MODE, false) === true && hasGithub(); }
   function setEnabled(on) { write(KEY_MODE, !!on); emit(); }
 
   /** Можно ли менять запись: личные — всегда, общие — только в режиме автора. */
