@@ -66,6 +66,7 @@ App.views.subject = async function(root, params) {
     label: subject.name
   } ]), pageHead(subject.name, countText(groups.length, FORMS.group) + ", " + countText(total, FORMS.card), editable ? [ btn("Добавить группу", addGroup, "btn--primary"), btn("Переименовать", renameSubject) ] : null) ];
   const quizTotal = groups.reduce((s, g) => s + g.quizCount, 0);
+  const examTotal = groups.reduce((s, g) => s + g.examCount, 0);
   if (groups.length > 1 && total > 0) {
     const sid = encodeURIComponent(subject.id);
     nodes.push(h("div", {
@@ -76,7 +77,7 @@ App.views.subject = async function(root, params) {
       class: "mode__title"
     }, "Учить весь предмет"), h("div", {
       class: "mode__text"
-    }, "Флеш-карточки из всех групп сразу: " + countText(total, FORMS.card) + "."), btn("Учить все карточки", () => App.router.go("#/subject/" + sid + "/flashcards"), "btn--primary")), h("div", {
+    }, "Флеш-карточки из всех групп сразу: " + countText(total, FORMS.card) + "."), btn("Учить все карточки", () => App.router.go("#/subject/" + sid + "/flashcards"), "btn--primary")), !quizTotal && examTotal ? null : h("div", {
       class: "mode"
     }, h("div", {
       class: "mode__title"
@@ -84,7 +85,13 @@ App.views.subject = async function(root, params) {
       class: "mode__text"
     }, quizTotal ? "Вопросы из всех групп вперемешку: " + countText(quizTotal, FORMS.question) + "." : "Нужна хотя бы одна карточка с тремя неправильными вариантами."), btn("Пройти тест", () => App.router.go("#/subject/" + sid + "/quiz"), "btn--primary", {
       disabled: !quizTotal
-    }))));
+    })), examTotal ? h("div", {
+      class: "mode"
+    }, h("div", {
+      class: "mode__title"
+    }, "Экзамен по всему предмету"), h("div", {
+      class: "mode__text"
+    }, "Открытые вопросы из всех групп: " + examTotal + "."), btn("Начать экзамен", () => App.router.go("#/subject/" + sid + "/exam"), "btn--primary")) : null));
   }
   if (subject.shared && !editable) {
     nodes.push(h("p", {

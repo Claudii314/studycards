@@ -109,6 +109,9 @@ App.backup = function() {
         question: normalizeText(x.question),
         answer: normalizeText(x.answer),
         wrongAnswers: wrong.map(normalizeText),
+        questionRu: typeof x.questionRu === "string" ? normalizeText(x.questionRu) : "",
+        answerRu: typeof x.answerRu === "string" ? normalizeText(x.answerRu) : "",
+        note: typeof x.note === "string" ? normalizeText(x.note) : "",
         createdAt: ts(x.createdAt),
         updatedAt: ts(x.updatedAt)
       });

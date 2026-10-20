@@ -4,7 +4,7 @@ App.repo = function() {
   const p = db.reqToPromise;
   const LIMITS = {
     name: 100,
-    text: 2e3
+    text: 5e3
   };
   class ValidationError extends Error {}
   function assertCanModify(record) {
@@ -98,7 +98,8 @@ App.repo = function() {
         const cards = await p(s.cards.index("byGroup").getAll(g.id));
         result.push(Object.assign({}, g, {
           cardCount: cards.length,
-          quizCount: cards.filter(isQuizCard).length
+          quizCount: cards.filter(isQuizCard).length,
+          examCount: cards.filter(isExamCard).length
         }));
       }
       return result;
@@ -154,6 +155,9 @@ App.repo = function() {
       touched(group);
     });
   }
+  function isExamCard(card) {
+    return String(card.answer || "").split(/\r?\n/).filter(l => l.trim()).length >= 2;
+  }
   function isQuizCard(card) {
     return Array.isArray(card.wrongAnswers) && card.wrongAnswers.length === 3 && card.wrongAnswers.every(w => normalizeText(w) !== "");
   }
@@ -177,13 +181,19 @@ App.repo = function() {
         if (w.length > LIMITS.text) errors["wrong" + i] = "Вариант слишком длинный."; else if (answer && lower(w) === lower(answer)) errors["wrong" + i] = "Неправильный вариант совпадает с правильным ответом."; else if (wrong.findIndex(x => lower(x) === lower(w)) !== i) errors["wrong" + i] = "Варианты не должны повторяться.";
       });
     }
+    const extra = {};
+    [ [ "questionRu", "Перевод вопроса" ], [ "answerRu", "Перевод ответа" ], [ "note", "Заметка" ] ].forEach(([key, label]) => {
+      const v = normalizeText(input[key]);
+      if (v.length > LIMITS.text) errors[key] = label + ": слишком длинный текст.";
+      extra[key] = v;
+    });
     return {
       errors: errors,
-      data: {
+      data: Object.assign({
         question: question,
         answer: answer,
         wrongAnswers: filled === 3 ? wrong : []
-      }
+      }, extra)
     };
   }
   async function listCards(groupId) {
@@ -310,6 +320,7 @@ App.repo = function() {
     renameGroup: renameGroup,
     deleteGroup: deleteGroup,
     isQuizCard: isQuizCard,
+    isExamCard: isExamCard,
     validateCard: validateCard,
     listCards: listCards,
     createCard: createCard,

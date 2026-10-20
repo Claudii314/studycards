@@ -7,6 +7,7 @@ App.views.group = async function(root, params) {
   const subject = await repo.getSubject(group.subjectId);
   const cards = await repo.listCards(group.id);
   const quizCount = cards.filter(repo.isQuizCard).length;
+  const examCount = cards.filter(repo.isExamCard).length;
   const rerender = () => App.router.render();
   const gid = encodeURIComponent(group.id);
   const editable = App.editor.canModify(group);
@@ -68,7 +69,7 @@ App.views.group = async function(root, params) {
     class: "mode__text"
   }, cards.length ? "Вопрос → ответ, отметка «Знал» или «Не знал». " + countText(cards.length, FORMS.card) + "." : "Добавьте хотя бы одну карточку."), btn("Учить карточки", () => App.router.go("#/group/" + gid + "/flashcards"), "btn--primary", {
     disabled: !cards.length
-  })), h("div", {
+  })), !quizCount && examCount ? null : h("div", {
     class: "mode"
   }, h("div", {
     class: "mode__title"
@@ -76,7 +77,13 @@ App.views.group = async function(root, params) {
     class: "mode__text"
   }, quizCount ? "Четыре варианта ответа. Подходит " + countText(quizCount, FORMS.card) + " из " + cards.length + "." : "Нужна хотя бы одна карточка с тремя неправильными вариантами."), btn("Пройти тест", () => App.router.go("#/group/" + gid + "/quiz"), "btn--primary", {
     disabled: !quizCount
-  })));
+  })), examCount ? h("div", {
+    class: "mode"
+  }, h("div", {
+    class: "mode__title"
+  }, "Экзамен"), h("div", {
+    class: "mode__text"
+  }, "Открытые вопросы: вспомни ответ и отметь названные ключевые пункты. Вопросов: " + examCount + "."), btn("Начать экзамен", () => App.router.go("#/group/" + gid + "/exam"), "btn--primary")) : null);
   const nodes = [ crumbs([ {
     label: "Предметы",
     href: "#/"
@@ -105,7 +112,9 @@ App.views.group = async function(root, params) {
       class: "card-item__a"
     }, c.answer), repo.isQuizCard(c) ? h("span", {
       class: "badge"
-    }, "Есть варианты для теста") : null, editable ? h("div", {
+    }, "Есть варианты для теста") : null, repo.isExamCard(c) ? h("span", {
+      class: "badge"
+    }, "Экзамен: " + App.exam.points(c).length + " " + App.utils.plural(App.exam.points(c).length, [ "пункт", "пункта", "пунктов" ])) : null, editable ? h("div", {
       class: "card-item__actions"
     }, btn("Изменить", () => editCard(c), "btn--sm btn--ghost"), btn("Удалить", () => removeCard(c), "btn--sm btn--ghost btn--danger")) : null))));
   }
@@ -154,10 +163,22 @@ App.views.cardForm = function({title: title, card: card, submitText: submitText,
   });
   const a = field("answer", "Правильный ответ *", card && card.answer, {
     multiline: true,
+    rows: 4
+  });
+  const qRu = field("questionRu", "Перевод вопроса", card && card.questionRu, {
+    multiline: true,
+    rows: 2
+  });
+  const aRu = field("answerRu", "Перевод ответа (построчно, как пункты ответа)", card && card.answerRu, {
+    multiline: true,
+    rows: 4
+  });
+  const note = field("note", "Заметка (показывается после ответа)", card && card.note, {
+    multiline: true,
     rows: 2
   });
   const w = [ 0, 1, 2 ].map(i => field("wrong" + i, "Неправильный вариант " + (i + 1), wrong[i], {}));
-  const all = [ q, a ].concat(w);
+  const all = [ q, a ].concat(w, [ qRu, aRu, note ]);
   const formError = h("div", {
     class: "field__error",
     role: "alert"
@@ -168,7 +189,13 @@ App.views.cardForm = function({title: title, card: card, submitText: submitText,
     class: "fieldset__legend"
   }, "Варианты для теста"), h("p", {
     class: "fieldset__hint"
-  }, "Необязательно. Заполните все три, чтобы карточка появилась в тесте."), w.map(x => x.node)), formError ];
+  }, "Необязательно. Заполните все три, чтобы карточка появилась в тесте."), w.map(x => x.node)), h("fieldset", {
+    class: "fieldset"
+  }, h("legend", {
+    class: "fieldset__legend"
+  }, "Для режима «Экзамен»"), h("p", {
+    class: "fieldset__hint"
+  }, "Необязательно. Если в ответе каждый ключевой пункт написан с новой строки, карточка появится в режиме «Экзамен». Формат пункта: «Ключевое слово: пояснение»."), qRu.node, aRu.node, note.node), formError ];
   return dialog({
     title: title,
     body: body,
@@ -190,7 +217,10 @@ App.views.cardForm = function({title: title, card: card, submitText: submitText,
       const data = {
         question: q.control.value,
         answer: a.control.value,
-        wrongAnswers: w.map(x => x.control.value)
+        wrongAnswers: w.map(x => x.control.value),
+        questionRu: qRu.control.value,
+        answerRu: aRu.control.value,
+        note: note.control.value
       };
       try {
         close(await save(data));

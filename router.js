@@ -32,6 +32,16 @@ App.router = function() {
     nav: "subjects",
     scope: "subject"
   }, {
+    re: /^#\/group\/([^/]+)\/exam$/,
+    view: "exam",
+    nav: "subjects",
+    scope: "group"
+  }, {
+    re: /^#\/subject\/([^/]+)\/exam$/,
+    view: "exam",
+    nav: "subjects",
+    scope: "subject"
+  }, {
     re: /^#\/backup$/,
     view: "backup",
     nav: "backup"

@@ -34,7 +34,7 @@
   try {
     const r = await App.sync.pull();
     if (r.status === "updated") {
-      const busy = /\/(flashcards|quiz)$/.test(location.hash) || location.hash === "#/author" || location.hash === "#/backup" || document.querySelector("dialog[open]");
+      const busy = /\/(flashcards|quiz|exam)$/.test(location.hash) || location.hash === "#/author" || location.hash === "#/backup" || document.querySelector("dialog[open]");
       if (!busy) App.router.render();
       App.ui.toast("Общие карточки обновлены");
     } else if (r.status === "invalid") {
