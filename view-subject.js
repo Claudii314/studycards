@@ -77,7 +77,7 @@ App.views.subject = async function(root, params) {
       class: "mode__title"
     }, "Учить весь предмет"), h("div", {
       class: "mode__text"
-    }, "Флеш-карточки из всех групп сразу: " + countText(total, FORMS.card) + "."), btn("Учить все карточки", () => App.router.go("#/subject/" + sid + "/flashcards"), "btn--primary")), !quizTotal && examTotal ? null : h("div", {
+    }, "Флеш-карточки из всех групп сразу: " + countText(total, FORMS.card) + "."), btn("Учить все карточки", () => App.router.go("#/subject/" + sid + "/flashcards"), "btn--primary")), !quizTotal && (examTotal || !editable) ? null : h("div", {
       class: "mode"
     }, h("div", {
       class: "mode__title"

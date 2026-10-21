@@ -86,7 +86,13 @@ App.views.flashcards = async function(root, params) {
       class: "flash__answer" + (card.answer.includes("\n") ? " flash__answer--list" : "")
     }, h("div", {
       class: "flash__answer-label"
-    }, "Ответ"), h("div", null, card.answer)) : null);
+    }, "Ответ"), h("div", null, card.answer), card.answerRu ? h("div", {
+      class: "flash__translation"
+    }, h("div", {
+      class: "flash__answer-label"
+    }, "Перевод"), h("div", null, card.answerRu)) : null, card.note ? h("div", {
+      class: "flash__note"
+    }, card.note) : null) : null);
     const actions = state.revealed ? h("div", {
       class: "study__actions"
     }, btn("Не знал", () => mark("unknown"), "btn--lg btn--danger-solid"), btn("Знал", () => mark("known"), "btn--lg btn--ok")) : h("div", {

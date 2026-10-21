@@ -69,7 +69,7 @@ App.views.group = async function(root, params) {
     class: "mode__text"
   }, cards.length ? "Вопрос → ответ, отметка «Знал» или «Не знал». " + countText(cards.length, FORMS.card) + "." : "Добавьте хотя бы одну карточку."), btn("Учить карточки", () => App.router.go("#/group/" + gid + "/flashcards"), "btn--primary", {
     disabled: !cards.length
-  })), !quizCount && examCount ? null : h("div", {
+  })), !quizCount && (examCount || !editable) ? null : h("div", {
     class: "mode"
   }, h("div", {
     class: "mode__title"

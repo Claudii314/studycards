@@ -189,6 +189,8 @@ h1, h2, h3 { line-height: 1.25; margin: 0; }
 .study__nav { display: flex; align-items: center; justify-content: space-between; margin-top: 18px; gap: 8px; }
 .study__counter { color: var(--muted); font-size: 17px; font-variant-numeric: tabular-nums; }
 
+.flash__translation { margin-top: 14px; padding-top: 12px; border-top: 1px dashed var(--border); color: #2E2585; }
+.flash__note { margin-top: 10px; font-size: 14px; color: var(--muted); }
 .flash__answer--list { text-align: left; font-size: 17px; line-height: 1.55; }
 
 .flash--exam { min-height: 0; padding-bottom: 24px; }
