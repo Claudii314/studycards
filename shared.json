@@ -1,7 +1,7 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-10-21T08:00:00.000Z",
+  "publishedAt": "2026-10-22T08:00:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
@@ -85,6 +85,13 @@
       "name": "Skratky ATC S–Z",
       "createdAt": 1792500000004,
       "updatedAt": 1792500000004
+    },
+    {
+      "id": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "subjectId": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
+      "name": "Blok 4 – Regionálne a mimovládne organizácie (4.1–4.25)",
+      "createdAt": 1792352991928,
+      "updatedAt": 1792352991928
     }
   ],
   "cards": [
@@ -4830,6 +4837,331 @@
       "note": "CZ: Počasí",
       "createdAt": 1792500000191,
       "updatedAt": 1792500000191
+    },
+    {
+      "id": "a0cda529-3635-4a96-94de-8be4ca94ca05",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.1 Kde sa nachádza sídlo organizácie ASECNA (Agentúra pre bezpečnosť leteckej prevádzky v Afrike a na Madagaskare)?",
+      "answer": "Dakar, Senegal",
+      "wrongAnswers": [
+        "Abidžan, Pobrežie Slonoviny",
+        "Niamey, Niger",
+        "Addis Abeba, Etiópia"
+      ],
+      "createdAt": 1792500000192,
+      "updatedAt": 1792500000192
+    },
+    {
+      "id": "ef0442b1-fa9b-45be-bee8-bf23ac920459",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.2 Aký je jediný pracovný jazyk medzinárodnej organizácie ASECNA?",
+      "answer": "Francúzština",
+      "wrongAnswers": [
+        "Angličtina",
+        "Arabčina",
+        "Francúzština a angličtina"
+      ],
+      "createdAt": 1792500000193,
+      "updatedAt": 1792500000193
+    },
+    {
+      "id": "803865bb-8689-404b-85b3-1c50bb4349db",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.3 Ktorý orgán je najvyšším orgánom organizácie ASECNA?",
+      "answer": "Výbor ministrov",
+      "wrongAnswers": [
+        "Správna rada",
+        "Generálne riaditeľstvo",
+        "Valné zhromaždenie"
+      ],
+      "createdAt": 1792500000194,
+      "updatedAt": 1792500000194
+    },
+    {
+      "id": "a891e05c-c856-48de-8c98-9bbe0b4cd17c",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.4 Kde sídli stredoamerická organizácia pre riadenie leteckej prevádzky COCESNA?",
+      "answer": "Tegucigalpa, Honduras",
+      "wrongAnswers": [
+        "San Salvador, Salvádor",
+        "Guatemala, Guatemala",
+        "Managua, Nikaragua"
+      ],
+      "createdAt": 1792500000195,
+      "updatedAt": 1792500000195
+    },
+    {
+      "id": "fd13721a-7a61-43ab-bf0a-4b5ca2daf198",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.5 Ktorá agentúra v rámci štruktúry COCESNA je zodpovedná za letecký výcvik a sídli v Salvádore?",
+      "answer": "ICCAE",
+      "wrongAnswers": [
+        "ACSA",
+        "SICA",
+        "COCATRAM"
+      ],
+      "createdAt": 1792500000196,
+      "updatedAt": 1792500000196
+    },
+    {
+      "id": "ed38c1f9-a04a-435a-8c57-91bf7fe2775c",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.6 Čo je hlavnou úlohou Latinskoamerickej komisie pre civilné letectvo (LACAC)?",
+      "answer": "Upevnenie nezávislosti a rozvoj leteckej dopravy v Latinskej Amerike",
+      "wrongAnswers": [
+        "Zjednotenie technických noriem pre letiská v Európe",
+        "Riadenie letovej prevádzky nad Južnou Amerikou",
+        "Zastupovanie leteckých dopravcov pri rokovaniach o tarifách"
+      ],
+      "createdAt": 1792500000197,
+      "updatedAt": 1792500000197
+    },
+    {
+      "id": "7e7d290b-e405-488d-8a39-af49a19384da",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.7 V ktorom meste má sídlo organizácia LACAC?",
+      "answer": "Lima, Peru",
+      "wrongAnswers": [
+        "Bogotá, Kolumbia",
+        "Buenos Aires, Argentína",
+        "Santiago, Čile"
+      ],
+      "createdAt": 1792500000198,
+      "updatedAt": 1792500000198
+    },
+    {
+      "id": "2432ebf3-b086-4ec3-9a0d-34a4deb1d931",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.8 Ktorý z nasledujúcich jazykov NIE JE pracovným jazykom organizácie LACAC?",
+      "answer": "Francúzština",
+      "wrongAnswers": [
+        "Španielčina",
+        "Portugalčina",
+        "Angličtina"
+      ],
+      "createdAt": 1792500000199,
+      "updatedAt": 1792500000199
+    },
+    {
+      "id": "a42d5b0c-c4c4-4692-8390-4a77c10a4161",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.9 Kde sa nachádza sídlo Arabskej organizácie civilného letectva (ACAO)?",
+      "answer": "Rabat-Súez, Maroko",
+      "wrongAnswers": [
+        "Káhira, Egypt",
+        "Rijád, Saudská Arábia",
+        "Dubaj, SAE"
+      ],
+      "createdAt": 1792500000200,
+      "updatedAt": 1792500000200
+    },
+    {
+      "id": "52c47c9b-c480-4461-91cc-a0c8707d53af",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.10 Ako často sa stretáva Valné zhromaždenie ACAO za účelom prijatia plánov a rozpočtu?",
+      "answer": "Každé dva roky",
+      "wrongAnswers": [
+        "Každý rok",
+        "Každé tri roky",
+        "Každých päť rokov"
+      ],
+      "createdAt": 1792500000201,
+      "updatedAt": 1792500000201
+    },
+    {
+      "id": "28eb60ca-1e57-42fe-b2a7-b29f14bf1d61",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.11 V ktorom meste sídli Medzinárodné združenie leteckých dopravcov (IATA)?",
+      "answer": "Montreal",
+      "wrongAnswers": [
+        "Paríž",
+        "Londýn",
+        "New York"
+      ],
+      "createdAt": 1792500000202,
+      "updatedAt": 1792500000202
+    },
+    {
+      "id": "39a10bd7-763f-4ad4-a708-0d22922258ab",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.12 Ktorá oblasť je pre IATA prioritou číslo jedna?",
+      "answer": "Bezpečnosť",
+      "wrongAnswers": [
+        "Ziskovosť leteckých spoločností",
+        "Ochrana životného prostredia",
+        "Znižovanie cien leteniek"
+      ],
+      "createdAt": 1792500000203,
+      "updatedAt": 1792500000203
+    },
+    {
+      "id": "036294ea-e789-452f-bb3a-b472ab9eb70f",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.13 Kto tvorí Radu guvernérov IATA?",
+      "answer": "Najviac 31 osôb volených spomedzi členov a generálny riaditeľ",
+      "wrongAnswers": [
+        "Najviac 21 osôb menovaných vládami členských štátov",
+        "Generálni riaditelia všetkých členských leteckých spoločností",
+        "36 zástupcov členských štátov ICAO"
+      ],
+      "createdAt": 1792500000204,
+      "updatedAt": 1792500000204
+    },
+    {
+      "id": "df3da3f3-0d49-4069-ad90-13bac1ac8436",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.14 Čím sa zaoberá Medzinárodné združenie civilných letísk (ACI)?",
+      "answer": "Podporovaním záujmov letísk a rozvojom ich politík",
+      "wrongAnswers": [
+        "Riadením letovej prevádzky v Európe",
+        "Certifikáciou letísk a vydávaním leteckých predpisov",
+        "Zastupovaním leteckých dopravcov pri tvorbe taríf"
+      ],
+      "createdAt": 1792500000205,
+      "updatedAt": 1792500000205
+    },
+    {
+      "id": "2a320bde-7704-4ae4-978f-222bd02664cc",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.15 Aký je pracovný jazyk organizácie ACI?",
+      "answer": "Angličtina",
+      "wrongAnswers": [
+        "Francúzština",
+        "Angličtina a francúzština",
+        "Šesť úradných jazykov OSN"
+      ],
+      "createdAt": 1792500000206,
+      "updatedAt": 1792500000206
+    },
+    {
+      "id": "44d65597-dde1-4e2e-a658-3a6bb500d297",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.16 Ktorá časť organizácie ACI je vrcholným riadiacim orgánom so sídlom v Montreale?",
+      "answer": "ACI World",
+      "wrongAnswers": [
+        "ACI Europe",
+        "ACI North America",
+        "ACI Asia-Pacific"
+      ],
+      "createdAt": 1792500000207,
+      "updatedAt": 1792500000207
+    },
+    {
+      "id": "37867358-1a27-4a7a-bec2-ccd873e090c4",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.17 Čo je hlavným poslaním Medzinárodnej federácie združenia dopravných pilotov (IFALPA)?",
+      "answer": "Koordinovať združenia dopravných pilotov v technických a profesionálnych otázkach",
+      "wrongAnswers": [
+        "Vydávať pilotné preukazy v členských štátoch",
+        "Zastupovať obchodné záujmy leteckých dopravcov",
+        "Riadiť výcvik pilotov všeobecného letectva"
+      ],
+      "createdAt": 1792500000208,
+      "updatedAt": 1792500000208
+    },
+    {
+      "id": "5d10b896-d5f6-45eb-8d65-b414d692c1e3",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.18 Koľko pilotov v súčasnosti zastupuje organizácia IFALPA?",
+      "answer": "Viac ako 100 000",
+      "wrongAnswers": [
+        "Približne 10 000",
+        "Približne 50 000",
+        "Viac ako 500 000"
+      ],
+      "createdAt": 1792500000209,
+      "updatedAt": 1792500000209
+    },
+    {
+      "id": "f2dd231a-cbd0-46e1-92ff-0478b9b93ee3",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.19 Kde sa nachádza sídlo Medzinárodnej spoločnosti pre letecké telekomunikácie (SITA)?",
+      "answer": "Ženeva, Švajčiarsko",
+      "wrongAnswers": [
+        "Paríž, Francúzsko",
+        "Brusel, Belgicko",
+        "Montreal, Kanada"
+      ],
+      "createdAt": 1792500000210,
+      "updatedAt": 1792500000210
+    },
+    {
+      "id": "5637fbba-5e83-4a56-b985-ded8e8246de8",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.20 V koľkých jazykoch poskytuje SITA svoje služby po celom svete?",
+      "answer": "Vo viac ako 60 jazykoch",
+      "wrongAnswers": [
+        "Vo viac ako 20 jazykoch",
+        "Vo viac ako 150 jazykoch",
+        "Len v angličtine a francúzštine"
+      ],
+      "createdAt": 1792500000211,
+      "updatedAt": 1792500000211
+    },
+    {
+      "id": "84bb7d93-98b0-4fb5-9677-c22066cc6001",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.21 Aký je hlavný cieľ Medzinárodnej leteckej federácie (FAI)?",
+      "answer": "Rozvoj športového letectva a ratifikácia rekordov",
+      "wrongAnswers": [
+        "Certifikácia dopravných lietadiel",
+        "Ochrana práv cestujúcich v leteckej doprave",
+        "Koordinácia riadenia letovej prevádzky v Európe"
+      ],
+      "createdAt": 1792500000212,
+      "updatedAt": 1792500000212
+    },
+    {
+      "id": "437f5095-473a-41ec-bdae-59d7ad9355e4",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.22 V ktorom meste sídli organizácia FAI?",
+      "answer": "Lausanne",
+      "wrongAnswers": [
+        "Ženeva",
+        "Paríž",
+        "Montreal"
+      ],
+      "createdAt": 1792500000213,
+      "updatedAt": 1792500000213
+    },
+    {
+      "id": "28ad9d13-75da-4aa8-8969-a337e16ce3da",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.23 Ktorý orgán je najvyšším orgánom FAI a schádza sa raz ročne?",
+      "answer": "Generálna konferencia",
+      "wrongAnswers": [
+        "Výkonná rada",
+        "Rada prezidentov",
+        "Sekretariát"
+      ],
+      "createdAt": 1792500000214,
+      "updatedAt": 1792500000214
+    },
+    {
+      "id": "8f579c87-3540-4aa1-9bfd-0f8268ec92d4",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.24 Na základe akého kritéria sa organizácie ako FAI alebo IFALPA označujú za „nevládne“?",
+      "answer": "Sú vytvárané na základe spoločných záujmov alebo zastupovania profesných skupín",
+      "wrongAnswers": [
+        "Sú zriadené medzinárodnou zmluvou medzi štátmi",
+        "Ich členmi sú výlučne vlády štátov",
+        "Sú financované z rozpočtu OSN"
+      ],
+      "createdAt": 1792500000215,
+      "updatedAt": 1792500000215
+    },
+    {
+      "id": "15c999b7-3c0f-472e-bac0-e6c739e6bba2",
+      "groupId": "41b6dcbf-0da1-4793-91ea-c99637fe1810",
+      "question": "4.25 Ktorá z uvedených organizácií je popredným špecialistom na IT procesy, batožinu a registráciu cestujúcich?",
+      "answer": "SITA",
+      "wrongAnswers": [
+        "IATA",
+        "ACI",
+        "IFALPA"
+      ],
+      "createdAt": 1792500000216,
+      "updatedAt": 1792500000216
     }
   ]
 }
