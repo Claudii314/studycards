@@ -32,6 +32,12 @@ App.router = function() {
     nav: "subjects",
     scope: "subject"
   }, {
+    re: /^#\/subject\/([^/]+)\/random-quiz$/,
+    view: "quiz",
+    nav: "subjects",
+    scope: "subject",
+    random: true
+  }, {
     re: /^#\/group\/([^/]+)\/exam$/,
     view: "exam",
     nav: "subjects",
@@ -58,7 +64,8 @@ App.router = function() {
         route: r,
         params: {
           id: m[1] ? decodeURIComponent(m[1]) : undefined,
-          scope: r.scope
+          scope: r.scope,
+          random: !!r.random
         }
       };
     }

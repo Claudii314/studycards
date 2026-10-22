@@ -28,8 +28,16 @@ App.views.quiz = async function(root, params) {
     chosen: null,
     correct: 0
   };
+  const randomSize = params.random ? set.options.randomQuiz : 0;
+  let poolInfo = null;
   function start() {
-    state.questions = shuffle(quizCards).map(c => ({
+    let list = shuffle(quizCards);
+    if (randomSize) {
+      const r = App.study.nextRandom(set.subjectId, quizCards, randomSize);
+      list = r.cards;
+      poolInfo = r;
+    }
+    state.questions = list.map(c => ({
       card: c,
       options: shuffle([ {
         text: c.answer,
@@ -96,7 +104,7 @@ App.views.quiz = async function(root, params) {
       class: "study__bar"
     }, h("div", {
       class: "study__title"
-    }, "Тест: " + group.name), btn("Начать заново", start, "btn--sm btn--ghost")), h("div", {
+    }, randomSize ? "Тест: " + randomSize + " случайных вопросов" : "Тест: " + group.name), btn("Начать заново", start, "btn--sm btn--ghost")), h("div", {
       class: "progress",
       "aria-hidden": "true"
     }, h("div", {
@@ -129,7 +137,9 @@ App.views.quiz = async function(root, params) {
       class: "result__big"
     }, pct + " %"), h("div", {
       class: "result__text"
-    }, "Правильных ответов: " + state.correct + " из " + total), h("div", {
+    }, "Правильных ответов: " + state.correct + " из " + total), poolInfo && poolInfo.total > total ? h("div", {
+      class: "result__text"
+    }, "В этом круге пройдено " + poolInfo.seen + " из " + poolInfo.total + " вопросов. Следующий запуск даст новые вопросы.") : null, h("div", {
       class: "result__stats"
     }, h("div", {
       class: "stat stat--ok"
@@ -145,7 +155,7 @@ App.views.quiz = async function(root, params) {
       class: "stat__label"
     }, "Ошибок"))), h("div", {
       class: "study__actions"
-    }, btn("Пройти ещё раз", start, "btn--primary"), h("a", {
+    }, btn(randomSize ? "Новые " + randomSize + " вопросов" : "Пройти ещё раз", start, "btn--primary"), h("a", {
       class: "btn",
       href: groupHref
     }, set.backLabel)))));

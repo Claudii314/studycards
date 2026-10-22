@@ -85,7 +85,13 @@ App.views.subject = async function(root, params) {
       class: "mode__text"
     }, quizTotal ? "Вопросы из всех групп вперемешку: " + countText(quizTotal, FORMS.question) + "." : "Нужна хотя бы одна карточка с тремя неправильными вариантами."), btn("Пройти тест", () => App.router.go("#/subject/" + sid + "/quiz"), "btn--primary", {
       disabled: !quizTotal
-    })), examTotal ? h("div", {
+    })), subject.options && subject.options.randomQuiz && quizTotal > subject.options.randomQuiz ? h("div", {
+      class: "mode"
+    }, h("div", {
+      class: "mode__title"
+    }, "Тест: " + subject.options.randomQuiz + " случайных вопросов"), h("div", {
+      class: "mode__text"
+    }, "Каждый запуск — новые вопросы, пока не будут пройдены все " + quizTotal + "."), btn("Начать", () => App.router.go("#/subject/" + sid + "/random-quiz"), "btn--primary")) : null, examTotal ? h("div", {
       class: "mode"
     }, h("div", {
       class: "mode__title"

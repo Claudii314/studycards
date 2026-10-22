@@ -63,12 +63,15 @@ App.backup = function() {
       if (ids.has(x.id)) return add(where + ": повторяющийся идентификатор.");
       if (!isStr(x.name)) return add(where + ": нет названия.");
       ids.add(x.id);
-      subjects.push({
+      const subject = {
         id: x.id,
         name: normalizeText(x.name),
         createdAt: ts(x.createdAt),
         updatedAt: ts(x.updatedAt)
-      });
+      };
+      const opts = cleanOptions(x.options);
+      if (opts) subject.options = opts;
+      subjects.push(subject);
     });
     const subjectIds = new Set(subjects.map(x => x.id));
     const groups = [];
@@ -129,6 +132,13 @@ App.backup = function() {
         cards: cards
       }
     };
+  }
+  function cleanOptions(o) {
+    if (!o || typeof o !== "object") return null;
+    const out = {};
+    if (o.hideNumbers === true) out.hideNumbers = true;
+    if (Number.isInteger(o.randomQuiz) && o.randomQuiz >= 5 && o.randomQuiz <= 200) out.randomQuiz = o.randomQuiz;
+    return Object.keys(out).length ? out : null;
   }
   function readFile(file) {
     return new Promise((resolve, reject) => {

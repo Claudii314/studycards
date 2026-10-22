@@ -11,6 +11,8 @@ App.study = function() {
       return {
         title: subject.name + ": все группы",
         scope: "subject",
+        subjectId: subject.id,
+        options: subject.options || {},
         cards: cards,
         backHref: backHref,
         backLabel: "К предмету",
@@ -31,6 +33,8 @@ App.study = function() {
     return {
       title: group.name,
       scope: "group",
+      subjectId: group.subjectId,
+      options: subject && subject.options || {},
       cards: await repo.listCards(group.id),
       backHref: backHref,
       backLabel: "К группе",
@@ -51,8 +55,49 @@ App.study = function() {
     const stripped = String(text).replace(/^\s*(\d+(\.\d+)+\.?|\d+\.)\s+/, "");
     return stripped || text;
   }
+  const POOL_KEY = "studycards.randomPool";
+  function readPool() {
+    try {
+      return JSON.parse(localStorage.getItem(POOL_KEY) || "{}");
+    } catch (e) {
+      return {};
+    }
+  }
+  function nextRandom(subjectId, cards, n) {
+    const shuffle = App.utils.shuffle;
+    if (cards.length <= n) return {
+      cards: shuffle(cards),
+      seen: cards.length,
+      total: cards.length
+    };
+    const all = readPool();
+    const ids = new Set(cards.map(c => c.id));
+    const used = new Set((all[subjectId] || []).filter(id => ids.has(id)));
+    const fresh = cards.filter(c => !used.has(c.id));
+    let pick;
+    let nextUsed;
+    if (fresh.length >= n) {
+      pick = shuffle(fresh).slice(0, n);
+      nextUsed = Array.from(used).concat(pick.map(c => c.id));
+    } else {
+      const taken = new Set(fresh.map(c => c.id));
+      const extra = shuffle(cards.filter(c => !taken.has(c.id))).slice(0, n - fresh.length);
+      pick = fresh.concat(extra);
+      nextUsed = extra.map(c => c.id);
+    }
+    all[subjectId] = nextUsed.length >= cards.length ? [] : nextUsed;
+    try {
+      localStorage.setItem(POOL_KEY, JSON.stringify(all));
+    } catch (e) {}
+    return {
+      cards: shuffle(pick),
+      seen: nextUsed.length,
+      total: cards.length
+    };
+  }
   return {
     load: load,
-    stripNumber: stripNumber
+    stripNumber: stripNumber,
+    nextRandom: nextRandom
   };
 }();

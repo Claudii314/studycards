@@ -1,13 +1,17 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-10-22T08:00:00.000Z",
+  "publishedAt": "2026-10-22T18:00:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
       "name": "Letecké právo",
       "createdAt": 1792352991874,
-      "updatedAt": 1792352991874
+      "updatedAt": 1792352991874,
+      "options": {
+        "hideNumbers": true,
+        "randomQuiz": 20
+      }
     },
     {
       "id": "3d5a73a0-cbc5-410d-997b-48984a1e0cae",

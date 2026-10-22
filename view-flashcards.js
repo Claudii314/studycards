@@ -82,7 +82,7 @@ App.views.flashcards = async function(root, params) {
       class: "flash__mark flash__mark--" + m
     }, m === "known" ? "Знал" : "Не знал") : null), h("div", {
       class: "flash__q"
-    }, set.scope === "subject" && state.shuffled ? App.study.stripNumber(card.question) : card.question), state.revealed ? h("div", {
+    }, set.scope === "subject" && state.shuffled || set.scope === "group" && set.options.hideNumbers ? App.study.stripNumber(card.question) : card.question), state.revealed ? h("div", {
       class: "flash__answer" + (card.answer.includes("\n") ? " flash__answer--list" : "")
     }, h("div", {
       class: "flash__answer-label"
