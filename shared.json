@@ -1,11 +1,11 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-10-22T18:00:00.000Z",
+  "publishedAt": "2026-11-14T13:30:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
-      "name": "Letecké právo",
+      "name": "Letecké právo – 1. časť",
       "createdAt": 1792352991874,
       "updatedAt": 1792352991874,
       "options": {
@@ -24,6 +24,16 @@
       "name": "Letecká angličtina",
       "createdAt": 1792500000000,
       "updatedAt": 1792500000000
+    },
+    {
+      "id": "0b402e99-9b8e-4177-aace-8480d07d62bd",
+      "name": "Letecké právo – 2. časť",
+      "createdAt": 1792352991875,
+      "updatedAt": 1792352991875,
+      "options": {
+        "hideNumbers": true,
+        "randomQuiz": 20
+      }
     }
   ],
   "groups": [
@@ -96,6 +106,20 @@
       "name": "Blok 4 – Regionálne a mimovládne organizácie (4.1–4.25)",
       "createdAt": 1792352991928,
       "updatedAt": 1792352991928
+    },
+    {
+      "id": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "subjectId": "0b402e99-9b8e-4177-aace-8480d07d62bd",
+      "name": "Blok 5 – Orgány a služby civilného letectva (5.1–5.25)",
+      "createdAt": 1792500000217,
+      "updatedAt": 1792500000217
+    },
+    {
+      "id": "848812b2-7f67-4a40-85de-c3f243847947",
+      "subjectId": "0b402e99-9b8e-4177-aace-8480d07d62bd",
+      "name": "Blok 6 – Letecká legislatíva SR (6.1–6.25)",
+      "createdAt": 1792500000342,
+      "updatedAt": 1792500000342
     }
   ],
   "cards": [
@@ -5166,6 +5190,656 @@
       ],
       "createdAt": 1792500000216,
       "updatedAt": 1792500000216
+    },
+    {
+      "id": "87e803a7-5154-42b3-8daa-ae1a59c0a630",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.1 Ktorá inštitúcia je podľa zákona č. 575/2001 Z. z. ústredným orgánom štátnej správy pre civilné letectvo v SR?",
+      "answer": "Ministerstvo dopravy SR",
+      "wrongAnswers": [
+        "Dopravný úrad",
+        "Ministerstvo obrany SR",
+        "Úrad vlády SR"
+      ],
+      "createdAt": 1792500000219,
+      "updatedAt": 1792500000219
+    },
+    {
+      "id": "e0d4e169-c49a-4863-8586-0f869f04f366",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.2 Aká je hlavná úloha Leteckého a námorného vyšetrovacieho útvaru (LNVÚ)?",
+      "answer": "Bezpečnostné vyšetrovanie príčin leteckých nehôd a incidentov",
+      "wrongAnswers": [
+        "Udeľovanie preukazov spôsobilosti pilotom",
+        "Trestné stíhanie vinníkov leteckých nehôd",
+        "Certifikácia letísk a leteckých dopravcov"
+      ],
+      "createdAt": 1792500000220,
+      "updatedAt": 1792500000220
+    },
+    {
+      "id": "6894ca42-292b-406c-a502-aa73befafad7",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.3 Čo je cieľom vyšetrovania nehôd vykonávaného LNVÚ?",
+      "answer": "Prevencia vzniku nehôd bez určovania vinníkov",
+      "wrongAnswers": [
+        "Určenie vinníka a výšky pokuty",
+        "Príprava podkladov pre súdne konanie",
+        "Odobratie preukazu spôsobilosti pilotovi"
+      ],
+      "createdAt": 1792500000221,
+      "updatedAt": 1792500000221
+    },
+    {
+      "id": "6f305453-4e10-4d6b-a3a3-44bcb2e2db96",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.4 Aký softvér vytvorený Európskou komisiou sa používa na uchovávanie informácií o udalostiach v letectve?",
+      "answer": "ECCAIRS",
+      "wrongAnswers": [
+        "EUROCAT",
+        "ARTAS",
+        "AFTN"
+      ],
+      "createdAt": 1792500000222,
+      "updatedAt": 1792500000222
+    },
+    {
+      "id": "6b7ad78a-08b1-4d74-ab53-504392b3c01f",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.5 Kedy bol zriadený Dopravný úrad?",
+      "answer": "1. januára 2014",
+      "wrongAnswers": [
+        "1. januára 2008",
+        "1. januára 2012",
+        "1. júla 2016"
+      ],
+      "createdAt": 1792500000223,
+      "updatedAt": 1792500000223
+    },
+    {
+      "id": "ad108590-d02f-4347-91f0-47f0b44060d1",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.6 Ktorý z nasledujúcich úradov nie je právnym predchodcom Dopravného úradu?",
+      "answer": "Letové prevádzkové služby SR",
+      "wrongAnswers": [
+        "Letecký úrad SR",
+        "Štátna plavebná správa",
+        "Úrad pre reguláciu železničnej dopravy"
+      ],
+      "createdAt": 1792500000224,
+      "updatedAt": 1792500000224
+    },
+    {
+      "id": "f5e89397-1908-45b5-b0ca-c95ab1ff7e5b",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.7 Ktorá sekcia Dopravného úradu zabezpečuje vedenie registra lietadiel?",
+      "answer": "Sekcia letovej prevádzky",
+      "wrongAnswers": [
+        "Sekcia navigačných služieb a letísk",
+        "Sekcia vodnej dopravy",
+        "Sekcia ekonomiky a správy"
+      ],
+      "createdAt": 1792500000225,
+      "updatedAt": 1792500000225
+    },
+    {
+      "id": "366aacd1-9d0d-4f5c-bbcd-bcb60c11d6b5",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.8 Ktorý orgán rozhoduje o rozklade proti rozhodnutiu Dopravného úradu?",
+      "answer": "Predseda Dopravného úradu",
+      "wrongAnswers": [
+        "Minister dopravy SR",
+        "Najvyšší súd SR",
+        "Generálna prokuratúra SR"
+      ],
+      "createdAt": 1792500000226,
+      "updatedAt": 1792500000226
+    },
+    {
+      "id": "bfe48852-ef3f-41bd-8636-a99e96ca5e88",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.9 V akej lehote možno podať rozklad proti rozhodnutiu Dopravného úradu?",
+      "answer": "Do 15 dní odo dňa oznámenia rozhodnutia",
+      "wrongAnswers": [
+        "Do 8 dní odo dňa oznámenia rozhodnutia",
+        "Do 30 dní odo dňa oznámenia rozhodnutia",
+        "Do 60 dní odo dňa oznámenia rozhodnutia"
+      ],
+      "createdAt": 1792500000227,
+      "updatedAt": 1792500000227
+    },
+    {
+      "id": "eb7824d6-84e1-4dc5-b107-752d4e1f9e22",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.10 Čo je hlavným poslaním Dopravného úradu?",
+      "answer": "Vykonávanie štátneho odborného dozoru a kontrol v doprave",
+      "wrongAnswers": [
+        "Prevádzkovanie letísk v SR",
+        "Poskytovanie letových prevádzkových služieb",
+        "Výroba a údržba lietadiel"
+      ],
+      "createdAt": 1792500000228,
+      "updatedAt": 1792500000228
+    },
+    {
+      "id": "de2e4655-5224-4170-ad3b-5fe267e7d4c3",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.11 Ktorá sekcia Dopravného úradu vyhlasuje a ruší ochranné pásma letísk?",
+      "answer": "Sekcia navigačných služieb a letísk",
+      "wrongAnswers": [
+        "Sekcia letovej prevádzky",
+        "Sekcia vodnej dopravy",
+        "Sekcia ekonomiky a správy"
+      ],
+      "createdAt": 1792500000229,
+      "updatedAt": 1792500000229
+    },
+    {
+      "id": "fdd382b8-1316-4386-9cc6-1f596fd6e69f",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.12 Kedy sa Slovenská republika stala členom organizácií ICAO a ECAC?",
+      "answer": "V roku 1993",
+      "wrongAnswers": [
+        "V roku 1991",
+        "V roku 1995",
+        "V roku 2004"
+      ],
+      "createdAt": 1792500000230,
+      "updatedAt": 1792500000230
+    },
+    {
+      "id": "ca6acb8a-97dc-4364-8b36-cc33fbcaf22d",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.13 Ktorý systém na poskytovanie letových prevádzkových služieb bol uvedený do prevádzky v októbri 1999?",
+      "answer": "EUROCAT E2000",
+      "wrongAnswers": [
+        "ARTAS",
+        "MAESTRO",
+        "COFLIGHT"
+      ],
+      "createdAt": 1792500000231,
+      "updatedAt": 1792500000231
+    },
+    {
+      "id": "edf94971-1c1b-4ec9-bf7d-262a0d18243a",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.14 Akú právnu formu majú Letové prevádzkové služby Slovenskej republiky?",
+      "answer": "Štátny podnik",
+      "wrongAnswers": [
+        "Akciová spoločnosť",
+        "Rozpočtová organizácia",
+        "Spoločnosť s ručením obmedzeným"
+      ],
+      "createdAt": 1792500000232,
+      "updatedAt": 1792500000232
+    },
+    {
+      "id": "b892c2a5-3390-4b97-959e-4cfd3c39e3d5",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.15 Čo je najvyššou prioritou LPS SR, š. p. podľa ich „Politiky bezpečnosti“?",
+      "answer": "Zaistenie bezpečnosti leteckej prevádzky",
+      "wrongAnswers": [
+        "Maximalizácia zisku podniku",
+        "Zníženie poplatkov za navigačné služby",
+        "Rozšírenie kapacity letísk"
+      ],
+      "createdAt": 1792500000233,
+      "updatedAt": 1792500000233
+    },
+    {
+      "id": "abe41248-0f6d-4cf6-80c5-a1e8a6fd0f17",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.16 Členom ktorého funkčného bloku vzdušného priestoru (FAB) je Slovenská republika?",
+      "answer": "FAB CE",
+      "wrongAnswers": [
+        "FABEC",
+        "Baltic FAB",
+        "Danube FAB"
+      ],
+      "createdAt": 1792500000234,
+      "updatedAt": 1792500000234
+    },
+    {
+      "id": "d36542d2-f6fe-42f5-b679-0ae42e800482",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.17 Ktoré stanovište poskytuje službu riadenia letovej prevádzky v riadenej oblasti (CTA) Bratislava?",
+      "answer": "ACC (Oblastné stredisko riadenia)",
+      "wrongAnswers": [
+        "APP (Približovacie stanovište riadenia)",
+        "TWR (Letisková riadiaca veža)",
+        "FIC (Letové informačné stredisko)"
+      ],
+      "createdAt": 1792500000235,
+      "updatedAt": 1792500000235
+    },
+    {
+      "id": "8fd67b1a-ed0a-44ff-a592-5769bfc159b7",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.18 Ktoré letiská v SR majú zriadené samostatné približovacie stanovište riadenia (APP)?",
+      "answer": "Bratislava a Košice",
+      "wrongAnswers": [
+        "Bratislava a Poprad",
+        "Košice a Žilina",
+        "Len Bratislava"
+      ],
+      "createdAt": 1792500000236,
+      "updatedAt": 1792500000236
+    },
+    {
+      "id": "44bd2f10-fd7c-47dc-b482-5229687a021d",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.19 Aká je úloha centrálnej ohlasovne letových prevádzkových služieb (CARO)?",
+      "answer": "Prijímanie letových plánov",
+      "wrongAnswers": [
+        "Riadenie letovej prevádzky na letisku",
+        "Vydávanie leteckej informačnej príručky",
+        "Koordinácia pátrania a záchrany"
+      ],
+      "createdAt": 1792500000237,
+      "updatedAt": 1792500000237
+    },
+    {
+      "id": "2606137d-bedf-4055-aad3-e7c77c5b8cc2",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.20 Ako sa nazýva hlavná komunikačná sieť pre letecké telekomunikačné služby v SR?",
+      "answer": "SACON",
+      "wrongAnswers": [
+        "PENS",
+        "SITA",
+        "GOVNET"
+      ],
+      "createdAt": 1792500000238,
+      "updatedAt": 1792500000238
+    },
+    {
+      "id": "f241337b-77e8-4e7c-8922-dea9a5777093",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.21 Čo obsahuje skratka AIP, ktorú vydáva Letecká informačná služba?",
+      "answer": "Leteckú informačnú príručku",
+      "wrongAnswers": [
+        "Letecký informačný obežník",
+        "Doplnok k leteckej informačnej príručke",
+        "Pravidlá lietania"
+      ],
+      "createdAt": 1792500000239,
+      "updatedAt": 1792500000239
+    },
+    {
+      "id": "f3f615ea-58c1-4ee7-be62-2862406d5564",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.22 Ktorý orgán je zodpovedný za vytvorenie systému pátrania po lietadlách a záchrany životov v SR?",
+      "answer": "Ministerstvo dopravy SR",
+      "wrongAnswers": [
+        "Ministerstvo obrany SR",
+        "Ministerstvo vnútra SR",
+        "Dopravný úrad"
+      ],
+      "createdAt": 1792500000240,
+      "updatedAt": 1792500000240
+    },
+    {
+      "id": "e1f4a03e-2825-4737-ae70-c0061c7a7984",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.23 Kde sídli Záchranné koordinačné stredisko (RCC)?",
+      "answer": "V Bratislave",
+      "wrongAnswers": [
+        "V Košiciach",
+        "V Banskej Bystrici",
+        "V Žiline"
+      ],
+      "createdAt": 1792500000241,
+      "updatedAt": 1792500000241
+    },
+    {
+      "id": "82edf9c5-e057-478e-9ca7-be52c5086082",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.24 Na ktorej tiesňovej frekvencii RCC nepretržite monitoruje vysielanie?",
+      "answer": "121,5 MHz",
+      "wrongAnswers": [
+        "118,0 MHz",
+        "127,1 MHz",
+        "135,0 MHz"
+      ],
+      "createdAt": 1792500000242,
+      "updatedAt": 1792500000242
+    },
+    {
+      "id": "182e5e5f-3b99-4d9a-9665-a640d960292e",
+      "groupId": "ef01db53-f4df-417d-ab31-98dd574141f7",
+      "question": "5.25 Čo je hlavným produktom Leteckej informačnej služby určeným na rýchle oznámenie dočasných zmien alebo nebezpečenstiev?",
+      "answer": "NOTAM",
+      "wrongAnswers": [
+        "AIC",
+        "AIP AMDT",
+        "METAR"
+      ],
+      "createdAt": 1792500000243,
+      "updatedAt": 1792500000243
+    },
+    {
+      "id": "cc8fd07c-6a5f-4550-93a8-d4ef320b84b7",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.1 Ako sa v Slovenskej republike v základe delí letecká legislatíva?",
+      "answer": "Na legislatívu vojenského letectva a civilného letectva",
+      "wrongAnswers": [
+        "Na leteckú a kozmickú legislatívu",
+        "Na verejnú a súkromnú leteckú legislatívu",
+        "Na legislatívu dopravcov a letísk"
+      ],
+      "createdAt": 1792500000244,
+      "updatedAt": 1792500000244
+    },
+    {
+      "id": "f73578e2-85a5-4f57-a9d7-083b238f477c",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.2 Z koľkých skupín pozostáva legislatíva civilného letectva v SR?",
+      "answer": "Z troch",
+      "wrongAnswers": [
+        "Z dvoch",
+        "Zo štyroch",
+        "Z piatich"
+      ],
+      "createdAt": 1792500000245,
+      "updatedAt": 1792500000245
+    },
+    {
+      "id": "c28af674-cbba-4ba9-b06b-817405968a8c",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.3 Čo tvoria medzinárodné legislatívne normy vydávané formou SARP?",
+      "answer": "Základ pre unifikáciu postupov v civilnej doprave na globálnej úrovni",
+      "wrongAnswers": [
+        "Priamo záväzné zákony pre všetky štáty bez výnimky",
+        "Interné predpisy leteckých spoločností",
+        "Národné predpisy Slovenskej republiky"
+      ],
+      "createdAt": 1792500000246,
+      "updatedAt": 1792500000246
+    },
+    {
+      "id": "a92a8647-f650-4c2a-b06b-799083198ef7",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.4 Aká je hlavná vlastnosť nariadení vydaných orgánmi Európskej únie?",
+      "answer": "Sú priamo uplatniteľné vo všetkých členských štátoch bez potreby ratifikácie",
+      "wrongAnswers": [
+        "Vyžadujú transpozíciu do národného práva",
+        "Majú len odporúčací charakter",
+        "Platia len v štátoch, ktoré ich ratifikovali"
+      ],
+      "createdAt": 1792500000247,
+      "updatedAt": 1792500000247
+    },
+    {
+      "id": "1f9a8423-bfc2-4014-b8d3-cf0fe666f848",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.5 Ktorý zákon v SR upravuje tvorbu právnych predpisov a Zbierku zákonov?",
+      "answer": "Zákon č. 400/2015 Z. z.",
+      "wrongAnswers": [
+        "Zákon č. 143/1998 Z. z.",
+        "Zákon č. 575/2001 Z. z.",
+        "Zákon č. 71/1967 Zb."
+      ],
+      "createdAt": 1792500000248,
+      "updatedAt": 1792500000248
+    },
+    {
+      "id": "b9021d11-b9da-4183-a033-9efe3b32b7d7",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.6 Ktoré tri skupiny vnútroštátnych noriem sú najvýznamnejšie pre leteckú dopravu?",
+      "answer": "Zákony, nariadenia vlády a vyhlášky ministerstiev",
+      "wrongAnswers": [
+        "Ústava, smernice EÚ a odporúčania ICAO",
+        "Rozhodnutia súdov, zmluvy a stanovy",
+        "Interné predpisy letísk, dopravcov a výrobcov"
+      ],
+      "createdAt": 1792500000249,
+      "updatedAt": 1792500000249
+    },
+    {
+      "id": "4c3fa524-d0c3-439f-b4e7-5cc863b1a699",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.7 Ktorý bol historicky prvý letecký zákon na území dnešnej SR?",
+      "answer": "Zákon č. 172/1925 Sb.",
+      "wrongAnswers": [
+        "Zákon č. 47/1956 Zb.",
+        "Zákon č. 143/1998 Z. z.",
+        "Zákon č. 575/2001 Z. z."
+      ],
+      "createdAt": 1792500000250,
+      "updatedAt": 1792500000250
+    },
+    {
+      "id": "08918160-f4ba-47f8-b3b2-a7784e912b5e",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.8 Z ktorého medzinárodného dokumentu vychádzal zákon č. 172/1925 Sb.?",
+      "answer": "Z Parížskeho dohovoru (1919)",
+      "wrongAnswers": [
+        "Z Chicagského dohovoru (1944)",
+        "Z Varšavského dohovoru (1929)",
+        "Z Havanského dohovoru (1928)"
+      ],
+      "createdAt": 1792500000251,
+      "updatedAt": 1792500000251
+    },
+    {
+      "id": "e2781d70-fb3d-4c34-9824-5d512bf0455b",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.9 Aký bol dôvod pre vydanie druhého leteckého zákona č. 47/1956 Zb.?",
+      "answer": "Vstup Chicagského dohovoru (1944) do platnosti",
+      "wrongAnswers": [
+        "Vznik samostatnej Slovenskej republiky",
+        "Vstup Varšavského dohovoru (1929) do platnosti",
+        "Založenie Európskej únie"
+      ],
+      "createdAt": 1792500000252,
+      "updatedAt": 1792500000252
+    },
+    {
+      "id": "58c0efd8-953d-4922-86ea-85fda55b77cb",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.10 Kedy nadobudol účinnosť súčasný letecký zákon č. 143/1998 Z. z.?",
+      "answer": "1. júla 1998",
+      "wrongAnswers": [
+        "1. januára 1998",
+        "1. januára 1999",
+        "1. júla 1993"
+      ],
+      "createdAt": 1792500000253,
+      "updatedAt": 1792500000253
+    },
+    {
+      "id": "8fb24e7b-a8ae-4e38-977f-9dc0c12dc2b6",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.11 Čo bolo hlavným impulzom pre vznik zákona č. 143/1998 Z. z.?",
+      "answer": "Zánik ČSFR a vznik samostatnej Slovenskej republiky",
+      "wrongAnswers": [
+        "Vstup Slovenskej republiky do Európskej únie",
+        "Vstup Chicagského dohovoru do platnosti",
+        "Zriadenie Dopravného úradu"
+      ],
+      "createdAt": 1792500000254,
+      "updatedAt": 1792500000254
+    },
+    {
+      "id": "18b6f294-a1a2-4840-8a63-f673f2739f8f",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.12 Koľko častí obsahuje Článok I. súčasného leteckého zákona (143/1998 Z. z.)?",
+      "answer": "12 častí",
+      "wrongAnswers": [
+        "8 častí",
+        "10 častí",
+        "15 častí"
+      ],
+      "createdAt": 1792500000255,
+      "updatedAt": 1792500000255
+    },
+    {
+      "id": "f3535778-36da-467f-ae58-914f2e678440",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.13 Akú právnu silu majú národné letecké predpisy (rad L)?",
+      "answer": "Sú to podzákonné normy na úrovni vyhlášok ministerstiev",
+      "wrongAnswers": [
+        "Majú silu ústavného zákona",
+        "Sú nadradené nariadeniam EÚ",
+        "Sú len nezáväzné odporúčania"
+      ],
+      "createdAt": 1792500000256,
+      "updatedAt": 1792500000256
+    },
+    {
+      "id": "5b2f75fa-631e-4b79-b50c-28c9e64ed611",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.14 Ktorý národný letecký predpis upravuje „Pravidlá lietania“?",
+      "answer": "L 2",
+      "wrongAnswers": [
+        "L 1",
+        "L 6",
+        "L 14"
+      ],
+      "createdAt": 1792500000257,
+      "updatedAt": 1792500000257
+    },
+    {
+      "id": "8d88bbb7-704b-405d-8047-9de22ff875dd",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.15 Čím sa zaoberá národný letecký predpis L 13?",
+      "answer": "Vyšetrovaním leteckých nehôd a incidentov",
+      "wrongAnswers": [
+        "Pravidlami lietania",
+        "Letiskami",
+        "Spôsobilosťou leteckého personálu"
+      ],
+      "createdAt": 1792500000258,
+      "updatedAt": 1792500000258
+    },
+    {
+      "id": "5eb4ed93-a5f7-424a-8c19-93b79ffd4bc2",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.16 Kto vydáva národné letecké predpisy v SR?",
+      "answer": "Ministerstvo dopravy SR",
+      "wrongAnswers": [
+        "Letové prevádzkové služby SR",
+        "Národná rada SR",
+        "Ministerstvo obrany SR"
+      ],
+      "createdAt": 1792500000259,
+      "updatedAt": 1792500000259
+    },
+    {
+      "id": "203262d6-f744-4e42-9441-cc7f53487ae9",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.17 Ktorý orgán je v SR národnou autoritou pre civilné letectvo?",
+      "answer": "Ministerstvo dopravy SR a Dopravný úrad",
+      "wrongAnswers": [
+        "Ministerstvo obrany SR a Ministerstvo vnútra SR",
+        "Letové prevádzkové služby SR a letiská",
+        "Len EASA"
+      ],
+      "createdAt": 1792500000260,
+      "updatedAt": 1792500000260
+    },
+    {
+      "id": "bc539279-2a37-4c26-8261-584ea043f9b2",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.18 Ktoré orgány sú autoritami pre štátne lietadlá v SR?",
+      "answer": "Ministerstvo obrany SR a Ministerstvo vnútra SR",
+      "wrongAnswers": [
+        "Ministerstvo dopravy SR a Dopravný úrad",
+        "Ministerstvo zahraničných vecí SR a Ministerstvo financií SR",
+        "Len Dopravný úrad"
+      ],
+      "createdAt": 1792500000261,
+      "updatedAt": 1792500000261
+    },
+    {
+      "id": "d93c7bc7-35a1-4f01-89cc-32739d720b05",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.19 Aký je vzťah medzi nariadeniami EÚ a národnými leteckými predpismi?",
+      "answer": "Nariadenia EÚ postupne začínajú nahrádzať niektoré národné letecké predpisy",
+      "wrongAnswers": [
+        "Národné predpisy majú prednosť pred nariadeniami EÚ",
+        "Nariadenia EÚ sa na civilné letectvo nevzťahujú",
+        "Národné predpisy rušia platnosť nariadení EÚ"
+      ],
+      "createdAt": 1792500000262,
+      "updatedAt": 1792500000262
+    },
+    {
+      "id": "1f48bfa1-97a9-4ef5-b51d-a74b3c3b4b7d",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.20 Čo upravuje národný predpis L 1?",
+      "answer": "Spôsobilosť leteckého personálu",
+      "wrongAnswers": [
+        "Pravidlá lietania",
+        "Letiská",
+        "Meteorologickú službu"
+      ],
+      "createdAt": 1792500000263,
+      "updatedAt": 1792500000263
+    },
+    {
+      "id": "7bdfe208-5f30-440c-82db-85d33908405b",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.21 Kedy sa Slovenská republika stala oficiálnym členom ICAO?",
+      "answer": "15. marca 1993",
+      "wrongAnswers": [
+        "1. januára 1993",
+        "1. júla 1993",
+        "15. marca 1994"
+      ],
+      "createdAt": 1792500000264,
+      "updatedAt": 1792500000264
+    },
+    {
+      "id": "864ec54d-f339-4753-a50a-14b3cd1580cb",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.22 Ktorý predpis sa venuje leteckému pátraniu a záchrane?",
+      "answer": "L 12",
+      "wrongAnswers": [
+        "L 2",
+        "L 13",
+        "L 14"
+      ],
+      "createdAt": 1792500000265,
+      "updatedAt": 1792500000265
+    },
+    {
+      "id": "e69c4820-430d-4318-bcf9-4d92d3236813",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.23 Aký predpis upravuje rádiotelefónne postupy a leteckú frazeológiu?",
+      "answer": "L 9432",
+      "wrongAnswers": [
+        "L 4444",
+        "L 8168",
+        "L 10"
+      ],
+      "createdAt": 1792500000266,
+      "updatedAt": 1792500000266
+    },
+    {
+      "id": "bd1bbca3-c3cf-48e6-a471-b8a435d1df46",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.24 Koľkokrát bol celkovo novelizovaný zákon č. 47/1956 Zb.?",
+      "answer": "Štyrikrát",
+      "wrongAnswers": [
+        "Raz",
+        "Dvakrát",
+        "Šesťkrát"
+      ],
+      "createdAt": 1792500000267,
+      "updatedAt": 1792500000267
+    },
+    {
+      "id": "dc38f34f-f4ee-4e53-947a-4fbb11b11f7b",
+      "groupId": "848812b2-7f67-4a40-85de-c3f243847947",
+      "question": "6.25 Čo upravuje národný predpis L 19?",
+      "answer": "Systém riadenia bezpečnosti",
+      "wrongAnswers": [
+        "Pravidlá lietania",
+        "Letiská",
+        "Vyšetrovanie leteckých nehôd"
+      ],
+      "createdAt": 1792500000268,
+      "updatedAt": 1792500000268
     }
   ]
 }
