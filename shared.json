@@ -1,7 +1,7 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-11-14T13:30:00.000Z",
+  "publishedAt": "2026-11-17T16:00:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
@@ -34,6 +34,12 @@
         "hideNumbers": true,
         "randomQuiz": 20
       }
+    },
+    {
+      "id": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "Organizácia leteckej dopravy",
+      "createdAt": 1794926721556,
+      "updatedAt": 1794926721556
     }
   ],
   "groups": [
@@ -120,6 +126,55 @@
       "name": "Blok 6 – Letecká legislatíva SR (6.1–6.25)",
       "createdAt": 1792500000342,
       "updatedAt": 1792500000342
+    },
+    {
+      "id": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T1 — História letectva",
+      "createdAt": 1794926721557,
+      "updatedAt": 1794926721557
+    },
+    {
+      "id": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T2 — Miesto leteckej dopravy",
+      "createdAt": 1794926721558,
+      "updatedAt": 1794926721558
+    },
+    {
+      "id": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T3 — Organizácia leteckej dopravy",
+      "createdAt": 1794926721559,
+      "updatedAt": 1794926721559
+    },
+    {
+      "id": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T4 — Medzinárodné organizácie",
+      "createdAt": 1794926721560,
+      "updatedAt": 1794926721560
+    },
+    {
+      "id": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T5 — Vládne organizácie v civilnom letectve",
+      "createdAt": 1794926721561,
+      "updatedAt": 1794926721561
+    },
+    {
+      "id": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T6 — Nevládne organizácie v civilnom letectve",
+      "createdAt": 1794926721562,
+      "updatedAt": 1794926721562
+    },
+    {
+      "id": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "subjectId": "843e8318-929d-4634-8ad2-6cef2ed7f83f",
+      "name": "T7 — Organizácie a bezpečnosť v letectve",
+      "createdAt": 1794926721563,
+      "updatedAt": 1794926721563
     }
   ],
   "cards": [
@@ -5840,6 +5895,994 @@
       ],
       "createdAt": 1792500000268,
       "updatedAt": 1792500000268
+    },
+    {
+      "id": "5c4a6a96-42e4-486a-9f56-23d6ccf6bec8",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Kto boli bratia Montgolfierovci?",
+      "answer": "Priekopníci balónového lietania.",
+      "wrongAnswers": [
+        "Vzduchoplavci, ktorí zostrojili prvý prúdový motor.",
+        "Konštruktéri prvého radaru.",
+        "Zakladatelia ICAO."
+      ],
+      "createdAt": 1794926798691,
+      "updatedAt": 1794926798691
+    },
+    {
+      "id": "071594c0-8d71-4169-b67e-a2dae2153bf1",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Kedy pôsobí výkonný orgán medzinárodnej organizácie?",
+      "answer": "Medzi zasadaniami najvyššieho orgánu.",
+      "wrongAnswers": [
+        "Iba počas zasadania najvyššieho orgánu.",
+        "Len pri voľbách predsedu organizácie.",
+        "Výlučne po zániku najvyššieho orgánu."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "09afbad9-4570-4ca3-b0fe-131663e474ea",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Aká je hlavná úloha letových prevádzkových služieb?",
+      "answer": "Zabraňovať zrážkam a zabezpečovať bezpečný, usporiadaný tok prevádzky.",
+      "wrongAnswers": [
+        "Predávať letenky a organizovať zájazdy.",
+        "Vyvíjať letecké motory.",
+        "Vydávať cestovné pasy cestujúcim."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "0a5b3c8e-204b-4347-bf7c-a1e5edc24f5b",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Ktorý orgán OSN zodpovedá za medzinárodný mier a bezpečnosť?",
+      "answer": "Bezpečnostná rada OSN.",
+      "wrongAnswers": [
+        "Valné zhromaždenie OSN.",
+        "Medzinárodný súdny dvor.",
+        "Sekretariát OSN."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "1792ab90-53ad-46a9-96f0-f8283e0455b1",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Aké tri prvky infraštruktúry leteckej dopravy uvádza prezentácia?",
+      "answer": "Letisko, letecké navigačné služby a letecký dopravca.",
+      "wrongAnswers": [
+        "Prístav, železničná stanica a autobusový dopravca.",
+        "Colný úrad, cestovná kancelária a hotel.",
+        "Železnica, diaľnica a lodný dopravca."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "1d743354-3274-4832-b7cd-d7e83c65b35b",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená ERA?",
+      "answer": "European Regions Airline Association.",
+      "wrongAnswers": [
+        "European Railway Agency.",
+        "European Regional Airports Council.",
+        "European Route Aviation Commission."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "220fdfba-fb04-4939-b70a-64ddc018694f",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo znamená NATO?",
+      "answer": "North Atlantic Treaty Organization.",
+      "wrongAnswers": [
+        "National Air Transport Organization.",
+        "North American Tourism Office.",
+        "New Aviation Technology Organization."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2682b980-b38e-4222-84e1-d9d06d0f3363",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Ktorý dohovor sa spája s rokom 1929?",
+      "answer": "Varšavský dohovor.",
+      "wrongAnswers": [
+        "Chicagský dohovor.",
+        "Tokijský dohovor.",
+        "Haagsky dohovor."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "27426da9-34d6-423c-89d0-1a80636a8743",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Koľko písmen má kód letiska ICAO?",
+      "answer": "Štyri.",
+      "wrongAnswers": [
+        "Tri.",
+        "Päť.",
+        "Dve."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2a1f78aa-7af9-4370-971d-6d11a8d96f36",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Kedy prvýkrát vzlietla vzducholoď LZ 1?",
+      "answer": "V roku 1900.",
+      "wrongAnswers": [
+        "V roku 1783.",
+        "V roku 1852.",
+        "V roku 1937."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2a96fd8b-1ffb-41f3-b314-b35af8bf5f2e",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená IFALPA?",
+      "answer": "International Federation of Air Line Pilots’ Associations.",
+      "wrongAnswers": [
+        "International Federation of Airport Operators.",
+        "International Flight Attendants and Logistics Professionals Association.",
+        "International Forum of Airline Passenger Agencies."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2bf2d6fd-e9cd-4213-8132-ded0d0337beb",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Uveď príklad umelej dopravnej cesty.",
+      "answer": "Cesta alebo železnica.",
+      "wrongAnswers": [
+        "Rieka alebo more.",
+        "Vzdušný priestor.",
+        "Prirodzené morské prúdy."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2d881d4f-ab78-4509-9794-e8e2397f20f4",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "S ktorým rokom sa spája zmluva z Nice?",
+      "answer": "2001.",
+      "wrongAnswers": [
+        "1997.",
+        "2007.",
+        "1960."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "2efc7678-c4c3-4349-a58a-d8680dd8df10",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo upravuje GATT?",
+      "answer": "Obchod s tovarmi.",
+      "wrongAnswers": [
+        "Obchod so službami.",
+        "Práva duševného vlastníctva.",
+        "Bezpečnosť civilného letectva."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "381ef79e-5a6f-4e74-b286-aa7c33be4f31",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo znamená ECAC?",
+      "answer": "European Civil Aviation Conference.",
+      "wrongAnswers": [
+        "European Commercial Airlines Council.",
+        "European Cargo Aviation Committee.",
+        "European Civil Airports Corporation."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "39902394-0e55-471d-b7e8-009689d4cf34",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená AACO?",
+      "answer": "Arab Air Carriers Organization.",
+      "wrongAnswers": [
+        "Asian Air Carriers Organization.",
+        "Arab Airports Control Office.",
+        "African Aviation Cooperation Organisation."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "3f7eb440-9f35-4bdd-9e42-30cec82114f1",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Ktorý dohovor sa spája so vznikom ICAO?",
+      "answer": "Chicagský dohovor.",
+      "wrongAnswers": [
+        "Varšavský dohovor.",
+        "Parížsky dohovor.",
+        "Tokijský dohovor."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "42124835-6207-4eeb-ace3-4a39715bc5e4",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Ako sa volala riaditeľná vzducholoď z roku 1884?",
+      "answer": "La France.",
+      "wrongAnswers": [
+        "Hindenburg.",
+        "LZ 1.",
+        "De Havilland Comet."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "4b67c85d-1d82-4f06-a52b-499005b73583",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo znamená EÚ?",
+      "answer": "Európska únia.",
+      "wrongAnswers": [
+        "Európska agentúra pre letectvo.",
+        "Európska úradná organizácia.",
+        "Európska únia letísk."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "4fa7bbc2-b249-49fe-8b5c-1caf2f935f86",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čomu sa venuje FAI?",
+      "answer": "Leteckým a vzdušným športom.",
+      "wrongAnswers": [
+        "Vojenskému riadeniu letovej prevádzky.",
+        "Námornej nákladnej doprave.",
+        "Železničnej infraštruktúre."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "5344ee32-8d31-4b5b-90f8-a648bd2396b2",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Koho záujmy zastupuje ACI?",
+      "answer": "Letiská.",
+      "wrongAnswers": [
+        "Pilotov.",
+        "Výrobcov leteckých motorov.",
+        "Železničných dopravcov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "5773cb74-216c-4ca4-8785-370750ecc2d6",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Kto navrhol vákuový balón v roku 1670?",
+      "answer": "Francesco Lana de Terzi.",
+      "wrongAnswers": [
+        "Henri Giffard.",
+        "Ferdinand von Zeppelin.",
+        "Otto Lilienthal."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "57f78e84-75e3-41c5-854a-3e3291f63b13",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "V ktorom roku sa stala katastrofa Hindenburgu?",
+      "answer": "1937.",
+      "wrongAnswers": [
+        "1900.",
+        "1914.",
+        "1952."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "5aae6431-0a93-4975-a54f-025c3a7ebec7",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Uveď príklad prirodzenej dopravnej cesty.",
+      "answer": "Vzdušný priestor, rieka alebo more.",
+      "wrongAnswers": [
+        "Diaľnica, most alebo železnica.",
+        "Letisková vzletová dráha.",
+        "Cestný tunel a most."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "5f1c1031-f93d-4f72-9922-d4e53ad09ed4",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Čo bolo hlavnou výhodou Lockheed Constellation?",
+      "answer": "Pretlakovaná kabína.",
+      "wrongAnswers": [
+        "Parný motor.",
+        "Nadzvuková rýchlosť.",
+        "Dvojposchodová kabína."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "6b7cd62b-2aec-4ca1-a562-95e0c07fb5df",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Kto zostrojil vzducholoď s parným pohonom v roku 1852?",
+      "answer": "Henri Giffard.",
+      "wrongAnswers": [
+        "Ferdinand von Zeppelin.",
+        "Bratia Wrightovci.",
+        "George Cayley."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "70b7cf8a-94b7-41d0-b00f-e184f428fa11",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Do ktorého roku fungovala PICAO?",
+      "answer": "Do roku 1947.",
+      "wrongAnswers": [
+        "Do roku 1919.",
+        "Do roku 1960.",
+        "Do roku 2001."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "7b1a7664-e31d-4e8b-be55-0a7f967ae46e",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Aké dva modely leteckej dopravy prezentácia rozlišuje?",
+      "answer": "Klasický a nízkonákladový model.",
+      "wrongAnswers": [
+        "Vojenský a kozmický model.",
+        "Námorný a železničný model.",
+        "Regionálny a vesmírny model."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "7bf8524f-4fde-4f79-b04b-6a9dc7480dc4",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená FAI?",
+      "answer": "Fédération Aéronautique Internationale.",
+      "wrongAnswers": [
+        "Federal Aviation Institute.",
+        "Flight Airports International.",
+        "Federation of Air Infrastructure."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8454c83d-b990-41ee-8b1a-d193a4a6d20b",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo znamená ICAO?",
+      "answer": "International Civil Aviation Organization.",
+      "wrongAnswers": [
+        "International Cargo Airports Office.",
+        "International Commercial Airline Operators.",
+        "International Council of Airport Operations."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "84ff9e40-2bfc-4edb-b813-3bea19be9ec3",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo znamená OSN?",
+      "answer": "Organizácia Spojených národov.",
+      "wrongAnswers": [
+        "Organizácia severoatlantickej navigácie.",
+        "Obchodná sieť národných letísk.",
+        "Organizácia svetového námorníctva."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "87695c58-58fd-4da3-989c-8fcd798da522",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Čo rieši Montrealský dohovor z roku 1971?",
+      "answer": "Potláčanie protiprávnych činov ohrozujúcich bezpečnosť civilného letectva.",
+      "wrongAnswers": [
+        "Pravidlá predaja železničných lístkov.",
+        "Zjednotenie colných sadzieb v EÚ.",
+        "Technické normy stavby diaľnic."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "884bcb54-10e5-48ec-99b0-e6d9679c030e",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Čo je dopravná cesta?",
+      "answer": "Priestor, po ktorom sa pohybujú dopravné prostriedky.",
+      "wrongAnswers": [
+        "Budova, v ktorej sídli dopravca.",
+        "Cena prepravy cestujúcich.",
+        "Zoznam dopravných spoločností."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8856e2a9-1a90-4b1d-b5d4-d2c7e41bc193",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Čo zabezpečuje stála organizačná štruktúra?",
+      "answer": "Plnenie úloh medzinárodnej organizácie.",
+      "wrongAnswers": [
+        "Len nákup kancelárskeho vybavenia.",
+        "Výlučne organizovanie športových súťaží.",
+        "Zrušenie rozhodnutí všetkých členských štátov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8a439a18-6a43-4279-a774-8620daaa5bca",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Na čo slúžia orgány s osobitným postavením?",
+      "answer": "Na osobitné účely; môžu byť dočasné alebo stále.",
+      "wrongAnswers": [
+        "Výlučne na výber letiskových poplatkov.",
+        "Iba na predaj leteniek.",
+        "Len na riadenie vnútroštátnych volieb."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8ae1b62c-64a2-45b6-a221-419b51047932",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená ACI?",
+      "answer": "Airports Council International.",
+      "wrongAnswers": [
+        "Airline Carriers Institute.",
+        "Aviation Cargo International.",
+        "Air Navigation Council Institute."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8b4c99c8-b8c0-4198-808f-8845ec106600",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená IATA?",
+      "answer": "International Air Transport Association.",
+      "wrongAnswers": [
+        "International Airports Traffic Authority.",
+        "International Air Technology Agency.",
+        "International Aviation Tourism Association."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8c089850-4f0d-43d3-9b39-a6162fde4973",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "V ktorom roku sa uskutočnil let balónom bratov Montgolfierovcov?",
+      "answer": "1783.",
+      "wrongAnswers": [
+        "1852.",
+        "1900.",
+        "1914."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8e272b9a-24d6-4021-b672-04deb578f863",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Aký je cieľ AACO?",
+      "answer": "Spolupráca a rozvoj arabských leteckých spoločností.",
+      "wrongAnswers": [
+        "Riadenie európskych železníc.",
+        "Organizovanie svetových leteckých športov.",
+        "Zastupovanie ázijských námorných prístavov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8e9fb643-b361-4a5b-a554-36fe3f94beb0",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Aký je jeden zo štyroch hlavných cieľov OSN?",
+      "answer": "Udržiavať mier na celom svete.",
+      "wrongAnswers": [
+        "Určovať ceny leteniek na celom svete.",
+        "Riadiť všetky letiská na svete.",
+        "Vydávať pilotné preukazy pre všetky krajiny."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8ecd19a0-aeca-414b-82de-77f12bfe4fc7",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Kedy bola založená organizácia EUROCONTROL?",
+      "answer": "13. decembra 1960.",
+      "wrongAnswers": [
+        "13. decembra 1945.",
+        "13. decembra 1919.",
+        "13. decembra 1998."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "8f028055-708e-4964-803f-efc8ccf813f2",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "V ktorom dohovore je zakotvený vznik ICAO?",
+      "answer": "V Chicagskom dohovore.",
+      "wrongAnswers": [
+        "Vo Varšavskom dohovore.",
+        "V Tokijskom dohovore.",
+        "V Montrealskom dohovore z roku 1971."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "90d27687-ad31-40ea-806b-673c7387ad82",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo znamená EASA?",
+      "answer": "Agentúra Európskej únie pre bezpečnosť letectva.",
+      "wrongAnswers": [
+        "Združenie európskych letísk.",
+        "Európska asociácia pilotov.",
+        "Medzinárodná organizácia leteckých dopravcov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "922c8f68-d753-4f65-9f6f-679dd9dccbc0",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Aký pohon mala vzducholoď La France?",
+      "answer": "Elektrický motor s batériou.",
+      "wrongAnswers": [
+        "Parný motor.",
+        "Spaľovací motor s vrtuľou.",
+        "Prúdový motor."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "952f453a-af56-4aa4-9f0e-7a354be24993",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo upravuje TRIPS?",
+      "answer": "Práva duševného vlastníctva.",
+      "wrongAnswers": [
+        "Obchod s tovarmi.",
+        "Obchod so službami.",
+        "Riadenie letovej prevádzky."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "96e72de9-a0be-4e34-84bf-8a711a2f26c7",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Ako sa volala predbežná organizácia pred ICAO?",
+      "answer": "PICAO.",
+      "wrongAnswers": [
+        "EUROCONTROL.",
+        "IATA.",
+        "ACI."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "971e4d54-e0fe-4756-a4cb-62aa209a17af",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo znamená EUROCONTROL?",
+      "answer": "European Organisation for the Safety of Air Navigation.",
+      "wrongAnswers": [
+        "European Organisation for Airport Tourism.",
+        "European Office for Aircraft Manufacturing.",
+        "European Association of Air Carriers."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "975a3ef0-ec08-4190-9928-bd3e67db32b1",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Ktoré bolo prvé prúdové dopravné lietadlo v komerčnej prevádzke?",
+      "answer": "De Havilland Comet 1.",
+      "wrongAnswers": [
+        "Douglas DC-3.",
+        "Lockheed Constellation.",
+        "Boeing 747."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "9803faa3-9b55-4d3d-8795-6630ccd6a77f",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Aké sú dva základné typy letectva podľa účelu?",
+      "answer": "Obchodná letecká doprava a všeobecné letectvo.",
+      "wrongAnswers": [
+        "Pravidelná a charterová doprava.",
+        "Nákladná a poštová doprava.",
+        "Domáca a medzinárodná doprava."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "9b45fe1d-0ff9-459c-a618-47b6e0dbfed9",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Koho združuje IFALPA?",
+      "answer": "Národné združenia pilotov.",
+      "wrongAnswers": [
+        "Prevádzkovateľov letísk.",
+        "Národné združenia železničiarov.",
+        "Výrobcov leteckých palív."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "9bad47b1-37e4-4798-806b-677ac483fddc",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Kedy bola podpísaná Parížska zmluva o civilnom letectve?",
+      "answer": "13. októbra 1919.",
+      "wrongAnswers": [
+        "13. októbra 1929.",
+        "13. októbra 1944.",
+        "13. októbra 1971."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "9d1f2041-3abc-4558-85e2-efd9c5918344",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "S ktorým rokom sa spája Lisabonská zmluva?",
+      "answer": "2007.",
+      "wrongAnswers": [
+        "1997.",
+        "2001.",
+        "1960."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "9dfd8d0c-05fd-40bc-9c82-f26913218203",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Ako sa delí doprava podľa pravidelnosti?",
+      "answer": "Pravidelná a charterová doprava.",
+      "wrongAnswers": [
+        "Klasická a nízkonákladová doprava.",
+        "Osobná a nákladná doprava.",
+        "Vnútroštátna a medzinárodná doprava."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "a1ce90e1-b087-4f4e-a757-54dc1734d3d0",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo znamená AFCAC?",
+      "answer": "African Civil Aviation Commission.",
+      "wrongAnswers": [
+        "Asian Flight Control and Aviation Commission.",
+        "Air Freight Carriers Association Council.",
+        "African Cargo Airline Confederation."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "a7181e3c-7e07-4b34-b8ae-41e87f6c930b",
+      "groupId": "7dbb4d96-d787-4a70-b5fe-c0926dbb4d2d",
+      "question": "Čo je jedným z cieľov ECAC?",
+      "answer": "Zjednocovanie politiky európskeho civilného letectva.",
+      "wrongAnswers": [
+        "Riadenie svetového námorného obchodu.",
+        "Vydávanie pasov cestujúcim.",
+        "Organizovanie olympijských hier."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "aa91c8f6-3855-497e-80f9-b980a9320f7a",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo znamená OSCE?",
+      "answer": "Organization for Security and Co-operation in Europe.",
+      "wrongAnswers": [
+        "Organization for Space Commerce in Europe.",
+        "Office for Safety of Civil Engines.",
+        "Organization of Southern Cargo Enterprises."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "aaa95323-cf35-4256-b5da-79bd25784e51",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Čo podporuje UIA?",
+      "answer": "Medzinárodnú spoluprácu a výmenu poznatkov medzi organizáciami.",
+      "wrongAnswers": [
+        "Riadenie všetkých vojenských operácií.",
+        "Stanovovanie cien leteckého paliva.",
+        "Vydávanie vodičských preukazov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "b0613279-dc3e-426d-a636-6d1bbee6819b",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Je vznášadlo podľa prezentácie lietadlo?",
+      "answer": "Nie.",
+      "wrongAnswers": [
+        "Áno.",
+        "Áno, ale len pri preprave cestujúcich.",
+        "Áno, pretože sa pohybuje nad povrchom."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "b4e9108b-caea-4780-9244-9f7044a77f51",
+      "groupId": "471bfb63-1aaf-4348-8456-f3940f84d588",
+      "question": "Je ekranoplán podľa prezentácie lietadlo?",
+      "answer": "Nie.",
+      "wrongAnswers": [
+        "Áno.",
+        "Áno, ale iba pri lete nad vodou.",
+        "Áno, pretože využíva vztlak pri pohybe."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "b7f7a083-c6c2-4436-9732-4372bed8c0ed",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Čo znamená fly-by-wire?",
+      "answer": "Elektronický prenos povelov riadenia lietadla.",
+      "wrongAnswers": [
+        "Mechanický prenos riadenia iba pomocou lán.",
+        "Ručné otáčanie vrtule pilotom.",
+        "Riadenie lietadla pomocou rádiových správ z veže."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "c2155592-8fc3-4778-88ce-ce626f863511",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Na základe čoho vzniká medzinárodná organizácia podľa definície?",
+      "answer": "Na základe medzinárodnej zmluvy.",
+      "wrongAnswers": [
+        "Na základe zmluvy o kúpe lietadiel.",
+        "Na základe rozhodnutia jednej súkromnej firmy.",
+        "Na základe cestovného poriadku."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "c4a0237e-ee5e-4dda-99ae-6ef5c3a8788c",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Kedy bola založená CANSO?",
+      "answer": "V roku 1998.",
+      "wrongAnswers": [
+        "V roku 1945.",
+        "V roku 1960.",
+        "V roku 2007."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "c6522296-d7d1-408d-aae4-a0ed9b2b06e3",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Čím sa začínajú kódy ICAO letísk v Rusku?",
+      "answer": "Písmenom U.",
+      "wrongAnswers": [
+        "Písmenom K.",
+        "Písmenom E.",
+        "Písmenom L."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "c7adc533-fd7f-4686-a283-6552dda3d7ec",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Čo bola DELAG?",
+      "answer": "Spoločnosť prevádzkujúca lety vzducholoďami.",
+      "wrongAnswers": [
+        "Organizácia pre železničnú dopravu.",
+        "Výrobca prvého prúdového lietadla.",
+        "Medzinárodná organizácia riadenia letovej prevádzky."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "cb4fc771-60cb-417b-9a4c-c2eca6d92797",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo upravuje GATS?",
+      "answer": "Obchod so službami.",
+      "wrongAnswers": [
+        "Obchod s tovarmi.",
+        "Práva duševného vlastníctva.",
+        "Ochranu leteckých koridorov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "d1087cf2-8e0b-4988-ac74-5a832ec4f6e4",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Koľko hlavných orgánov OSN ustanovila Charta OSN?",
+      "answer": "Šesť.",
+      "wrongAnswers": [
+        "Štyri.",
+        "Päť.",
+        "Osem."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "d44ce9e7-a77d-4555-9bc6-f2e9e9a33c65",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Aký typ členstva je spoločným znakom medzinárodných organizácií?",
+      "answer": "Dobrovoľné členstvo rovnoprávnych partnerov.",
+      "wrongAnswers": [
+        "Povinné členstvo bez možnosti vystúpenia.",
+        "Členstvo iba súkromných spoločností.",
+        "Členstvo založené výlučne na geografickej blízkosti."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "d5c43bd2-42f7-4cf4-8ded-3ca472dbba22",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Kde má IATA výkonné centrum?",
+      "answer": "V Ženeve vo Švajčiarsku.",
+      "wrongAnswers": [
+        "V Montreale v Kanade.",
+        "V Havane na Kube.",
+        "V Paríži vo Francúzsku."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "d9c83ce9-1417-459d-8fd5-c544f60ab983",
+      "groupId": "3f85c2a3-e52f-45e0-91f9-943c4ca93dea",
+      "question": "Čím sa začínajú kódy ICAO letísk v USA?",
+      "answer": "Písmenom K.",
+      "wrongAnswers": [
+        "Písmenom U.",
+        "Písmenom L.",
+        "Písmenom E."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "de90078d-087a-4e71-8e3f-9ec38558c86c",
+      "groupId": "aa4874dc-afcf-4b09-98ca-bcc7f011c783",
+      "question": "Ktoré lietadlo bolo významné v osobnej doprave od roku 1936?",
+      "answer": "Douglas DC-3.",
+      "wrongAnswers": [
+        "Concorde.",
+        "De Havilland Comet 1.",
+        "Airbus A380."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "ead4677f-4a85-4b2e-8bd7-16fc01c1bedd",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "S ktorým rokom sa spája Amsterdamská zmluva?",
+      "answer": "1997.",
+      "wrongAnswers": [
+        "2001.",
+        "2007.",
+        "1919."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "ef74d115-1dcf-4d52-929e-509de37a536f",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Kde sídli IATA?",
+      "answer": "V Montreale v Kanade.",
+      "wrongAnswers": [
+        "V Ženeve vo Švajčiarsku.",
+        "V Havane na Kube.",
+        "V Bruseli v Belgicku."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "f3d72145-b1fe-4064-99ab-6f262e571c31",
+      "groupId": "2be64a4f-623d-4755-82b8-3486d49e5b0f",
+      "question": "Čo znamená WTO?",
+      "answer": "World Trade Organization.",
+      "wrongAnswers": [
+        "World Tourism Organization.",
+        "World Transport Office.",
+        "Worldwide Technical Operations."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "f595501a-870c-46ef-b313-b226c0e641ab",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Čo znamená CANSO?",
+      "answer": "Civil Air Navigation Services Organisation.",
+      "wrongAnswers": [
+        "Civil Airport Network Safety Office.",
+        "Commercial Airline Navigation Standards Organisation.",
+        "Council of Aircraft and Navigation Systems Operators."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "f9411c79-4ab0-4ba2-8ad0-05c9a32f7ce0",
+      "groupId": "599e6f38-3c56-49f8-955f-ca2b4dd70d3d",
+      "question": "Kedy a kde bola založená IATA?",
+      "answer": "V roku 1945 v Havane na Kube.",
+      "wrongAnswers": [
+        "V roku 1919 v Paríži.",
+        "V roku 1960 v Bruseli.",
+        "V roku 2007 v Lisabone."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
+    },
+    {
+      "id": "fcec005c-1c10-402b-a70d-8024403adf7a",
+      "groupId": "cada7c81-ba2f-47ce-8834-2990929990a6",
+      "question": "Koľko štátov najmenej uvádza jedna definícia medzinárodnej organizácie?",
+      "answer": "Najmenej tri štáty.",
+      "wrongAnswers": [
+        "Najmenej dva štáty.",
+        "Najmenej desať štátov.",
+        "Najmenej dvadsať štátov."
+      ],
+      "createdAt": 1794927063421,
+      "updatedAt": 1794927063421
     }
   ]
 }
