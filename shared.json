@@ -1,7 +1,7 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-11-18T10:00:00.000Z",
+  "publishedAt": "2026-11-18T11:00:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
@@ -40,16 +40,6 @@
       "name": "Organizácia leteckej dopravy",
       "createdAt": 1794926721556,
       "updatedAt": 1794926721556
-    },
-    {
-      "id": "8fa620e0-1cec-4bd0-80e7-d00c26025bb7",
-      "name": "Letecké právo – 3. časť",
-      "createdAt": 1792352991876,
-      "updatedAt": 1792352991876,
-      "options": {
-        "hideNumbers": true,
-        "randomQuiz": 20
-      }
     }
   ],
   "groups": [
@@ -188,7 +178,7 @@
     },
     {
       "id": "e4771f99-25b5-4858-908c-378620f0ad95",
-      "subjectId": "8fa620e0-1cec-4bd0-80e7-d00c26025bb7",
+      "subjectId": "0b402e99-9b8e-4177-aace-8480d07d62bd",
       "name": "Blok 7 – Vojenský predpis Let-1-1 (7.1–7.25)",
       "createdAt": 1794927063422,
       "updatedAt": 1794927063422
