@@ -1,7 +1,7 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-11-17T16:00:00.000Z",
+  "publishedAt": "2026-11-18T10:00:00.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
@@ -40,6 +40,16 @@
       "name": "Organizácia leteckej dopravy",
       "createdAt": 1794926721556,
       "updatedAt": 1794926721556
+    },
+    {
+      "id": "8fa620e0-1cec-4bd0-80e7-d00c26025bb7",
+      "name": "Letecké právo – 3. časť",
+      "createdAt": 1792352991876,
+      "updatedAt": 1792352991876,
+      "options": {
+        "hideNumbers": true,
+        "randomQuiz": 20
+      }
     }
   ],
   "groups": [
@@ -175,6 +185,13 @@
       "name": "T7 — Organizácie a bezpečnosť v letectve",
       "createdAt": 1794926721563,
       "updatedAt": 1794926721563
+    },
+    {
+      "id": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "subjectId": "8fa620e0-1cec-4bd0-80e7-d00c26025bb7",
+      "name": "Blok 7 – Vojenský predpis Let-1-1 (7.1–7.25)",
+      "createdAt": 1794927063422,
+      "updatedAt": 1794927063422
     }
   ],
   "cards": [
@@ -6883,6 +6900,331 @@
       ],
       "createdAt": 1794927063421,
       "updatedAt": 1794927063421
+    },
+    {
+      "id": "36473d14-cc2b-4f46-848e-f160edbf82c6",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.1 Ktorý vojenský predpis upravuje postup pri organizovaní, riadení a vykonávaní lietania vojenskými lietadlami v SR?",
+      "answer": "Let-1-1",
+      "wrongAnswers": [
+        "L 2",
+        "L 14",
+        "L 4444"
+      ],
+      "createdAt": 1794927063424,
+      "updatedAt": 1794927063424
+    },
+    {
+      "id": "cdabb687-204c-4fe0-b709-e2b234797c12",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.2 Ako sa v predpise definuje „Let lietadla“?",
+      "answer": "Pohyb lietadla vlastnou silou od začiatku rozjazdu pri vzlete do skončenia dojazdu po dosadnutí",
+      "wrongAnswers": [
+        "Pohyb lietadla od naštartovania motorov po ich vypnutie",
+        "Pohyb lietadla od odlepenia od zeme po dotyk s dráhou",
+        "Akýkoľvek pohyb lietadla po prevádzkovej ploche letiska"
+      ],
+      "createdAt": 1794927063425,
+      "updatedAt": 1794927063425
+    },
+    {
+      "id": "a505ba85-1a9f-4419-8e09-ce5bdd4e1160",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.3 Čo znamená kódové označenie „Alpha Scramble“?",
+      "answer": "Vzlet lietadla z pohotovostného systému na plnenie bojovej úlohy",
+      "wrongAnswers": [
+        "Cvičný vzlet lietadla z pohotovostného systému na plnenie úloh výcvikového letu",
+        "Vzlet na previerku pripravenosti pohotovostného systému a pomoc lietadlám v núdzi",
+        "Plánovaný vzlet na prelet medzi letiskami"
+      ],
+      "createdAt": 1794927063426,
+      "updatedAt": 1794927063426
+    },
+    {
+      "id": "75320fab-762c-450c-9dfe-d0525821a499",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.4 Kto zodpovedá za spôsobilosť posádky, prípravu a bezpečné vykonanie letu?",
+      "answer": "Veliteľ lietadla",
+      "wrongAnswers": [
+        "Riadiaci letovej prevádzky",
+        "Náčelník zmeny strediska riadenia a uvedomovania",
+        "Technik lietadla"
+      ],
+      "createdAt": 1794927063427,
+      "updatedAt": 1794927063427
+    },
+    {
+      "id": "6190f0d5-eade-42f0-8b6c-3b1d761a41f7",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.5 Aký je minimálny predletový odpočinok pre výkonných letcov a zmeny riadenia?",
+      "answer": "8 hodín",
+      "wrongAnswers": [
+        "6 hodín",
+        "10 hodín",
+        "12 hodín"
+      ],
+      "createdAt": 1794927063428,
+      "updatedAt": 1794927063428
+    },
+    {
+      "id": "40219693-6866-4de3-8695-14faac2f1ac8",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.6 Čo tvorí vodorovné hranice Letovej informačnej oblasti (FIR) Slovenskej republiky?",
+      "answer": "Štátne hranice Slovenskej republiky",
+      "wrongAnswers": [
+        "Hranice riadených okrskov letísk",
+        "Hranice funkčného bloku FAB CE",
+        "Hranice vojenských cvičných priestorov"
+      ],
+      "createdAt": 1794927063429,
+      "updatedAt": 1794927063429
+    },
+    {
+      "id": "79540816-9df5-44f4-9587-61e387c3fe84",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.7 Do ktorej výšky siahajú „lety v prízemnej výške“?",
+      "answer": "Do 300 m (1 000 stôp) nad úrovňou zeme (AGL)",
+      "wrongAnswers": [
+        "Do 150 m (500 stôp) nad úrovňou zeme (AGL)",
+        "Do 600 m (2 000 stôp) nad úrovňou zeme (AGL)",
+        "Do 900 m (3 000 stôp) nad úrovňou zeme (AGL)"
+      ],
+      "createdAt": 1794927063430,
+      "updatedAt": 1794927063430
+    },
+    {
+      "id": "52a6712b-5934-437d-9444-8cad5d750857",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.8 Akú platnosť má predbežná príprava (vrátane dňa jej vykonania)?",
+      "answer": "8 dní",
+      "wrongAnswers": [
+        "3 dni",
+        "5 dní",
+        "14 dní"
+      ],
+      "createdAt": 1794927063431,
+      "updatedAt": 1794927063431
+    },
+    {
+      "id": "078c18df-1105-4b29-8eab-bc87ced4e1f1",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.9 Ktorý kód SSR nastaví pilot na odpovedači v prípade straty spojenia?",
+      "answer": "7600",
+      "wrongAnswers": [
+        "7700",
+        "7500",
+        "2000"
+      ],
+      "createdAt": 1794927063432,
+      "updatedAt": 1794927063432
+    },
+    {
+      "id": "046bd1e0-d2fd-4db7-93ec-74bcb0c39356",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.10 Čo je to „Tango Scramble“?",
+      "answer": "Cvičný vzlet lietadla z pohotovostného systému na plnenie úloh výcvikového letu",
+      "wrongAnswers": [
+        "Vzlet lietadla z pohotovostného systému na plnenie bojovej úlohy",
+        "Vzlet na previerku pripravenosti pohotovostného systému a pomoc lietadlám v núdzi",
+        "Vzlet lietadla na prelet na záložné letisko"
+      ],
+      "createdAt": 1794927063433,
+      "updatedAt": 1794927063433
+    },
+    {
+      "id": "8f4b5fb2-73f1-4b96-9ff7-2d0ef2f64085",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.11 Do ktorej kategórie výkonných letcov patrí „Loadmaster“?",
+      "answer": "Palubní technici",
+      "wrongAnswers": [
+        "Piloti",
+        "Navigátori",
+        "Riadiaci letovej prevádzky"
+      ],
+      "createdAt": 1794927063434,
+      "updatedAt": 1794927063434
+    },
+    {
+      "id": "d36e8aea-9feb-454f-85c4-8ea588a0cc8b",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.12 Aká je maximálna dĺžka lietania v jednej letovej zmene?",
+      "answer": "7 hodín",
+      "wrongAnswers": [
+        "5 hodín",
+        "9 hodín",
+        "12 hodín"
+      ],
+      "createdAt": 1794927063435,
+      "updatedAt": 1794927063435
+    },
+    {
+      "id": "07e93873-9d38-4ce2-90fc-d0d480bfa5da",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.13 Čo zahŕňa „Priebežné lietanie“?",
+      "answer": "Vzlety a pristátia podľa predbežne plánovaného zámeru v priebehu jedného letového dňa (max. 12 hodín)",
+      "wrongAnswers": [
+        "Lety vykonávané nepretržite 24 hodín denne",
+        "Lety jednej letovej zmeny v trvaní najviac 7 hodín",
+        "Výlučne nočné lety podľa plánu letovej zmeny"
+      ],
+      "createdAt": 1794927063436,
+      "updatedAt": 1794927063436
+    },
+    {
+      "id": "d69e5b17-4ddc-4612-b20e-4c894a393daa",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.14 Kto je to JTAC?",
+      "answer": "Predsunutý letecký navádzač na navádzanie na pozemné ciele",
+      "wrongAnswers": [
+        "Riadiaci letovej prevádzky na stanovišti VEŽA",
+        "Veliteľ pohotovostného systému",
+        "Technik zodpovedný za prípravu lietadla"
+      ],
+      "createdAt": 1794927063437,
+      "updatedAt": 1794927063437
+    },
+    {
+      "id": "ee4acfa6-3d10-4428-9627-adb794bf0021",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.15 Pri akej teplote vzduchu je zakázané vykonávať letovú činnosť vo forme letových zmien a priebežného lietania?",
+      "answer": "Nad +35 °C",
+      "wrongAnswers": [
+        "Nad +30 °C",
+        "Nad +32 °C",
+        "Nad +38 °C"
+      ],
+      "createdAt": 1794927063438,
+      "updatedAt": 1794927063438
+    },
+    {
+      "id": "585f1193-bc98-49e1-8e15-eb207015bff5",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.16 Ako sa oblietava búrková oblačnosť zmenou trate (horizontálne)?",
+      "answer": "Vo vzdialenosti najmenej 10 000 m (5,4 NM)",
+      "wrongAnswers": [
+        "Vo vzdialenosti najmenej 2 000 m (1,1 NM)",
+        "Vo vzdialenosti najmenej 5 000 m (2,7 NM)",
+        "Vo vzdialenosti najmenej 20 000 m (10,8 NM)"
+      ],
+      "createdAt": 1794927063439,
+      "updatedAt": 1794927063439
+    },
+    {
+      "id": "1bd901a1-3b4a-425b-9e0b-a56cba021960",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.17 Aký je minimálny vertikálny odstup pri oblietavaní búrkovej oblačnosti nad jej hornou hranicou?",
+      "answer": "1 000 m (3 300 ft)",
+      "wrongAnswers": [
+        "300 m (1 000 ft)",
+        "500 m (1 650 ft)",
+        "2 000 m (6 600 ft)"
+      ],
+      "createdAt": 1794927063440,
+      "updatedAt": 1794927063440
+    },
+    {
+      "id": "3e43f59d-b39b-48cd-87f8-7ad277b05739",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.18 Čo je to „Letová prevádzka“ podľa definície v predpise?",
+      "answer": "Prevádzka lietadiel počas letu alebo lietadiel pohybujúcich sa po prevádzkovej ploche letiska",
+      "wrongAnswers": [
+        "Len lety lietadiel v riadenom vzdušnom priestore",
+        "Pohyb vozidiel a osôb na odbavovacej ploche letiska",
+        "Činnosť stanovíšť riadenia letovej prevádzky"
+      ],
+      "createdAt": 1794927063441,
+      "updatedAt": 1794927063441
+    },
+    {
+      "id": "6f3b7393-021f-4702-ac73-083103fe815b",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.19 Ktoré stanovište riadi pohyb osôb a vozidiel na prevádzkovej ploche letiska?",
+      "answer": "Stanovište VEŽA (TWR)",
+      "wrongAnswers": [
+        "Stanovište PRIBLÍŽENIE (APP)",
+        "Oblastné stredisko riadenia (ACC)",
+        "Stredisko riadenia a uvedomovania (CRC)"
+      ],
+      "createdAt": 1794927063442,
+      "updatedAt": 1794927063442
+    },
+    {
+      "id": "66386876-ad5b-4170-a573-6b46d87c8582",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.20 Aký časový systém používajú stanovištia riadenia letovej prevádzky?",
+      "answer": "Svetový koordinovaný čas (UTC)",
+      "wrongAnswers": [
+        "Stredoeurópsky čas (SEČ)",
+        "Letný stredoeurópsky čas (SELČ)",
+        "Miestny čas letiska"
+      ],
+      "createdAt": 1794927063443,
+      "updatedAt": 1794927063443
+    },
+    {
+      "id": "3a296d89-df5e-4321-bd41-5ba58cff1740",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.21 Aké je kódové označenie pre vzlet na previerku pripravenosti pohotovostného systému a pomoc lietadlám v núdzi?",
+      "answer": "Romeo Scramble",
+      "wrongAnswers": [
+        "Alpha Scramble",
+        "Tango Scramble",
+        "Bravo Scramble"
+      ],
+      "createdAt": 1794927063444,
+      "updatedAt": 1794927063444
+    },
+    {
+      "id": "4c28680d-76b2-41ff-a5f2-c2f522e65b68",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.22 Kedy sa považuje rádiové spojenie za stratené v riadenom vzdušnom priestore?",
+      "answer": "Ak posádka neodpovedá počas 5 minút",
+      "wrongAnswers": [
+        "Ak posádka neodpovedá počas 1 minúty",
+        "Ak posádka neodpovedá počas 3 minút",
+        "Ak posádka neodpovedá počas 10 minút"
+      ],
+      "createdAt": 1794927063445,
+      "updatedAt": 1794927063445
+    },
+    {
+      "id": "527fe373-dbc2-4956-a4fe-7454060839a1",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.23 Ktorý typ rozboru sa vykonáva s cieľom vyhodnotiť vykonaný let a nepripustiť na ďalší let lietadlo s poruchou?",
+      "answer": "Medziletový rozbor",
+      "wrongAnswers": [
+        "Predletový rozbor",
+        "Záverečný rozbor letovej zmeny",
+        "Predbežná príprava"
+      ],
+      "createdAt": 1794927063446,
+      "updatedAt": 1794927063446
+    },
+    {
+      "id": "a15a8917-8746-4082-9e8d-6d31384dc632",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.24 Kto môže v rámci letovej činnosti obmedziť alebo zakázať akúkoľvek činnosť vojenských lietadiel?",
+      "answer": "Náčelník zmeny strediska riadenia a uvedomovania (MC CRC)",
+      "wrongAnswers": [
+        "Veliteľ lietadla",
+        "Riadiaci stanovišťa VEŽA",
+        "Dopravný úrad"
+      ],
+      "createdAt": 1794927063447,
+      "updatedAt": 1794927063447
+    },
+    {
+      "id": "53d58d07-20f9-4928-99b7-44b6dd4731af",
+      "groupId": "e4771f99-25b5-4858-908c-378620f0ad95",
+      "question": "7.25 Aké je zakázané prevýšenie pri prelete nad stanovišťom lietadiel (stojánkou)?",
+      "answer": "Menej ako 25 m (80 ft)",
+      "wrongAnswers": [
+        "Menej ako 10 m (30 ft)",
+        "Menej ako 50 m (160 ft)",
+        "Menej ako 100 m (330 ft)"
+      ],
+      "createdAt": 1794927063448,
+      "updatedAt": 1794927063448
     }
   ]
 }
