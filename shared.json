@@ -1,7 +1,7 @@
 {
   "format": "studycards-shared",
   "version": 1,
-  "publishedAt": "2026-11-18T11:00:00.000Z",
+  "publishedAt": "2026-11-21T23:40:11.000Z",
   "subjects": [
     {
       "id": "f99d15d1-281a-4a70-b8bd-3e8ce0fcec4c",
@@ -182,6 +182,13 @@
       "name": "Blok 7 – Vojenský predpis Let-1-1 (7.1–7.25)",
       "createdAt": 1794927063422,
       "updatedAt": 1794927063422
+    },
+    {
+      "id": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "subjectId": "0b402e99-9b8e-4177-aace-8480d07d62bd",
+      "name": "Blok 8 – Bezpečnosť, trestné právo a kriminológia (8.1–8.25)",
+      "createdAt": 1795304411556,
+      "updatedAt": 1795304411556
     }
   ],
   "cards": [
@@ -7215,6 +7222,331 @@
       ],
       "createdAt": 1794927063448,
       "updatedAt": 1794927063448
+    },
+    {
+      "id": "1eb8e313-f1c9-444a-9eae-5f16a0c1acf3",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.1 Čo predstavuje bezpečnosť podľa súčasnej spoločenskej empírie?",
+      "answer": "Významný multidimenzionálny faktor kvality života spoločnosti a občana",
+      "wrongAnswers": [
+        "Výlučne vojenskú schopnosť štátu brániť svoje územie",
+        "Stav, ktorý zaručujú iba ozbrojené sily a polícia",
+        "Jednorozmerný ekonomický ukazovateľ výkonnosti štátu"
+      ],
+      "createdAt": 1795304411557,
+      "updatedAt": 1795304411557
+    },
+    {
+      "id": "f857b0e6-f3e5-4189-a6c1-5cf1193dc1c9",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.2 Ako sa v kontexte ochrany záujmov vníma rozdiel medzi „bezpečnosťou štátu“ a „bezpečím občana“?",
+      "answer": "Bezpečnosť štátu sa týka veľkej entity, bezpečie občana sa týka jednotlivca a jeho majetku",
+      "wrongAnswers": [
+        "Oba pojmy sú synonymá a označujú to isté",
+        "Bezpečnosť štátu sa týka jednotlivca, bezpečie občana celej spoločnosti",
+        "Bezpečie občana sa týka iba vojenskej obrany štátu"
+      ],
+      "createdAt": 1795304411558,
+      "updatedAt": 1795304411558
+    },
+    {
+      "id": "0aed9008-7f2d-4132-89ed-d0cb93f339f7",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.3 Ktoré komponenty identifikuje OECD ako súčasť bezpečnostného sektora v štáte?",
+      "answer": "Kľúčoví aktéri, bezpečnostný manažment štátu, inštitúcie MV a MS SR, súkromné bezpečnostné organizácie",
+      "wrongAnswers": [
+        "Iba ozbrojené sily a spravodajské služby",
+        "Výlučne štátne orgány bez súkromných bezpečnostných organizácií",
+        "Iba medzinárodné organizácie pôsobiace na území štátu"
+      ],
+      "createdAt": 1795304411559,
+      "updatedAt": 1795304411559
+    },
+    {
+      "id": "c6b659ab-dd25-4206-8408-7b9dc34753c0",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.4 Čo je kľúčovou analytickou rovinou pri skúmaní bezpečia občana podľa horizontálneho členenia Kodaňskej školy?",
+      "answer": "Sektory: vojenský, politický, ekonomický, environmentálny a sociálny",
+      "wrongAnswers": [
+        "Úrovne: lokálna, regionálna a globálna",
+        "Fázy: prevencia, ochrana, reakcia a obnova",
+        "Aktéri: štát, armáda a polícia"
+      ],
+      "createdAt": 1795304411560,
+      "updatedAt": 1795304411560
+    },
+    {
+      "id": "def533ec-ced0-420f-a712-9d75e207d0a2",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.5 Ktorý referenčný objekt je primárny pre autorov textu pri skúmaní bezpečnosti, na rozdiel od pôvodnej Kodaňskej školy?",
+      "answer": "Jednotlivec (osoba, občan) alebo majetok",
+      "wrongAnswers": [
+        "Štát ako celok",
+        "Medzinárodný systém",
+        "Ozbrojené sily štátu"
+      ],
+      "createdAt": 1795304411561,
+      "updatedAt": 1795304411561
+    },
+    {
+      "id": "bb9a8ccb-4e00-4cc9-8831-bcf2c7e14747",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.6 Koľko oblastí ľudskej bezpečnosti definuje Koncept ľudskej bezpečnosti OSN (UNDP) z roku 1994?",
+      "answer": "7 oblastí",
+      "wrongAnswers": [
+        "5 oblastí",
+        "4 oblasti",
+        "10 oblastí"
+      ],
+      "createdAt": 1795304411562,
+      "updatedAt": 1795304411562
+    },
+    {
+      "id": "91fa7b7c-c072-4a80-bf82-dd52909bf15d",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.7 Do ktorej agendy Konceptu ľudskej bezpečnosti primárne spadá ochrana osôb a majetku?",
+      "answer": "Osobná bezpečnosť",
+      "wrongAnswers": [
+        "Ekonomická bezpečnosť",
+        "Environmentálna bezpečnosť",
+        "Politická bezpečnosť"
+      ],
+      "createdAt": 1795304411563,
+      "updatedAt": 1795304411563
+    },
+    {
+      "id": "73ea9cfb-5e44-4a90-9a08-f024ae901234",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.8 Aké sú fázy tzv. „bezpečnostného cyklu“?",
+      "answer": "Prevencia, ochrana, príprava, reakcia (zásah), obnova",
+      "wrongAnswers": [
+        "Plánovanie, organizovanie, vedenie, kontrola",
+        "Identifikácia, analýza, hodnotenie, monitorovanie",
+        "Prevencia, represia, trest, resocializácia"
+      ],
+      "createdAt": 1795304411564,
+      "updatedAt": 1795304411564
+    },
+    {
+      "id": "59e8e7be-4704-4cbe-8195-1748c848ea32",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.9 Ktorý ústavný zákon definuje chránené záujmy SR, ako sú zvrchovanosť a územná celistvosť?",
+      "answer": "Ústavný zákon č. 227/2002 Z. z.",
+      "wrongAnswers": [
+        "Ústavný zákon č. 460/1992 Zb.",
+        "Zákon č. 143/1998 Z. z.",
+        "Zákon č. 300/2005 Z. z."
+      ],
+      "createdAt": 1795304411565,
+      "updatedAt": 1795304411565
+    },
+    {
+      "id": "c368fd32-4273-47db-8f3b-870570b27828",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.10 Čo rozumieme pod pojmom „kompetencia“ profesionála v oblasti právnych vied?",
+      "answer": "Psychofyziologické a sociálno-psychologické kvality, výkonnosť a odbornú spôsobilosť",
+      "wrongAnswers": [
+        "Iba formálne dosiahnuté vzdelanie a akademický titul",
+        "Výlučne právomoc orgánu rozhodovať v určitej veci",
+        "Iba dĺžku praxe v odbore"
+      ],
+      "createdAt": 1795304411566,
+      "updatedAt": 1795304411566
+    },
+    {
+      "id": "42d01429-9836-4886-82f4-701f9ed32fd7",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.11 Aký je pôvod slova „edukácia“ v kontexte vedenia ľudí?",
+      "answer": "Z latinského „educare“ (vychovávať) a „educere“ (viesť)",
+      "wrongAnswers": [
+        "Z gréckeho „paideia“ (výchova)",
+        "Z latinského „docere“ (učiť)",
+        "Z anglického „education“ (vzdelanie)"
+      ],
+      "createdAt": 1795304411567,
+      "updatedAt": 1795304411567
+    },
+    {
+      "id": "05021c01-1138-4463-ab9e-2dfb7b74ee73",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.12 Čo je obsahom trestnoprávnej edukácie ako didaktického systému?",
+      "answer": "Procedúra na dosiahnutie cieľov v teoretickej a praktickej oblasti (trestné právo hmotné a procesné)",
+      "wrongAnswers": [
+        "Iba memorovanie paragrafov Trestného zákona",
+        "Výlučne praktický výcvik policajtov",
+        "Iba výučba občianskeho práva"
+      ],
+      "createdAt": 1795304411568,
+      "updatedAt": 1795304411568
+    },
+    {
+      "id": "af0a333d-690d-45fa-8d5f-51453c619d77",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.13 Ktorý nový integrovaný študijný odbor nahradil v SR doterajšie odbory ako Letecké a kozmické inžinierstvo či Logistika?",
+      "answer": "Doprava",
+      "wrongAnswers": [
+        "Letectvo",
+        "Bezpečnostné vedy",
+        "Strojárstvo"
+      ],
+      "createdAt": 1795304411569,
+      "updatedAt": 1795304411569
+    },
+    {
+      "id": "5aa2daac-6bb9-4aec-91a6-a5d5605d4e92",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.14 Čo tvorí jadro materiálnych komponentov obranného potenciálu štátu?",
+      "answer": "Ekonomický, vojensko-ekonomický, vedecký a vojensko-vedecký potenciál",
+      "wrongAnswers": [
+        "Duchovný a morálny činiteľ obyvateľstva",
+        "Výlučne počet vojakov v ozbrojených silách",
+        "Medzinárodné zmluvy a spojenectvá"
+      ],
+      "createdAt": 1795304411570,
+      "updatedAt": 1795304411570
+    },
+    {
+      "id": "8522b699-a637-4046-a7ee-f03576fc0430",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.15 Akú úlohu zohráva „duchovný činiteľ“ v obrannom potenciáli?",
+      "answer": "Je to špecifický prejav spoločenského vedomia, odhodlanosť a schopnosť plniť úlohy",
+      "wrongAnswers": [
+        "Označuje úlohu cirkví pri obrane štátu",
+        "Je to súčasť materiálnych komponentov obranného potenciálu",
+        "Nemá v obrannom potenciáli žiadnu úlohu"
+      ],
+      "createdAt": 1795304411571,
+      "updatedAt": 1795304411571
+    },
+    {
+      "id": "ac7b15e5-54bd-4869-8ddf-127bafd2ac6f",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.16 Do ktorej časti právneho poriadku SR patrí trestné právo?",
+      "answer": "Verejné právo",
+      "wrongAnswers": [
+        "Súkromné právo",
+        "Medzinárodné právo súkromné",
+        "Obchodné právo"
+      ],
+      "createdAt": 1795304411572,
+      "updatedAt": 1795304411572
+    },
+    {
+      "id": "6f0bdbc8-2332-42ff-8928-5ac865e011b9",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.17 Aký je rozdiel medzi trestným právom hmotným a procesným?",
+      "answer": "Hmotné upravuje, čo je trestným činom; procesné upravuje postup orgánov v konaní",
+      "wrongAnswers": [
+        "Hmotné upravuje postup orgánov v konaní; procesné upravuje, čo je trestným činom",
+        "Hmotné sa týka majetku; procesné osôb",
+        "Medzi nimi nie je rozdiel"
+      ],
+      "createdAt": 1795304411573,
+      "updatedAt": 1795304411573
+    },
+    {
+      "id": "a9e60751-1e24-47b1-a839-7ed43ee392a6",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.18 Čo je základom trestnej zodpovednosti podľa slovenského práva?",
+      "answer": "Spáchanie trestného činu",
+      "wrongAnswers": [
+        "Úmysel spáchať trestný čin bez akéhokoľvek konania",
+        "Obvinenie zo strany polície",
+        "Spôsobenie akejkoľvek škody"
+      ],
+      "createdAt": 1795304411574,
+      "updatedAt": 1795304411574
+    },
+    {
+      "id": "7d1b9699-5f64-4189-8f46-00c20d9e2feb",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.19 Čím sa zaoberá veda kriminológia?",
+      "answer": "Skúmaním príčin a spôsobov páchania trestnej činnosti, páchateľom, obeťou a prevenciou",
+      "wrongAnswers": [
+        "Iba technickými metódami vyšetrovania na mieste činu",
+        "Výlučne výkonom trestu odňatia slobody",
+        "Iba výkladom ustanovení Trestného zákona"
+      ],
+      "createdAt": 1795304411575,
+      "updatedAt": 1795304411575
+    },
+    {
+      "id": "1b2d0a06-1cfa-4472-954a-900da9e3f752",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.20 Čo upravuje Smernica Európskeho parlamentu a Rady (EÚ) 2016/681 (Smernica PNR)?",
+      "answer": "Využívanie údajov zo záznamov o cestujúcich na účely prevencie terorizmu a závažnej trestnej činnosti",
+      "wrongAnswers": [
+        "Práva cestujúcich pri zrušení alebo meškaní letu",
+        "Ochranu osobných údajov vo všeobecnosti",
+        "Bezpečnostnú kontrolu batožiny na letiskách"
+      ],
+      "createdAt": 1795304411576,
+      "updatedAt": 1795304411576
+    },
+    {
+      "id": "032a0894-cc4b-49b9-8f94-fd01c2b1cc35",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.21 Aký je rozdiel medzi sociálnou a situačnou prevenciou kriminality?",
+      "answer": "Sociálna sa zameriava na výchovu a kvalitu života; situačná na sťaženie možností páchania činu (technické opatrenia)",
+      "wrongAnswers": [
+        "Sociálna sa zameriava na technické opatrenia; situačná na výchovu",
+        "Sociálna sa týka iba obetí; situačná iba páchateľov",
+        "Ide o synonymá"
+      ],
+      "createdAt": 1795304411577,
+      "updatedAt": 1795304411577
+    },
+    {
+      "id": "dee1f465-c2bb-4bab-8688-78cc6be9f36e",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.22 Čo je cieľom kriminológie v leteckej doprave ako špecifického výskumu?",
+      "answer": "Tvorba hybridného modelu nástrojov pre zvýšenie úrovne prevencie kriminality v tomto sektore",
+      "wrongAnswers": [
+        "Vyšetrovanie leteckých nehôd a incidentov",
+        "Určovanie výšky trestov za letecké trestné činy",
+        "Certifikácia bezpečnostného personálu letísk"
+      ],
+      "createdAt": 1795304411578,
+      "updatedAt": 1795304411578
+    },
+    {
+      "id": "e3e2c785-1cd9-4180-951f-26bca0e852e4",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.23 Ktorý dokument z roku 2005 je kľúčový pre bezpečnostnú stratégiu SR (aj keď prechádza aktualizáciami)?",
+      "answer": "Bezpečnostná stratégia Slovenskej republiky",
+      "wrongAnswers": [
+        "Obranná stratégia Slovenskej republiky",
+        "Ústava Slovenskej republiky",
+        "Trestný zákon"
+      ],
+      "createdAt": 1795304411579,
+      "updatedAt": 1795304411579
+    },
+    {
+      "id": "cd386be6-742d-4510-92b6-416885efa4cb",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.24 Ktoré trestné činy v Trestnom zákone SR priamo súvisia s ochranou bezpečnosti štátu?",
+      "answer": "Trestné činy proti republike, proti brannosti a proti mieru a ľudskosti",
+      "wrongAnswers": [
+        "Trestné činy proti majetku",
+        "Trestné činy proti životu a zdraviu",
+        "Trestné činy proti rodine a mládeži"
+      ],
+      "createdAt": 1795304411580,
+      "updatedAt": 1795304411580
+    },
+    {
+      "id": "0f18bca7-97b5-4ead-b64e-d52569d21ded",
+      "groupId": "a52b6b78-68ec-4214-87d7-63042e77dd7d",
+      "question": "8.25 Čo je konečným cieľom trestnoprávnej edukácie podľa autorov?",
+      "answer": "Príprava „právnickej osobnosti“, ktorá rešpektuje normy, etiku a kultúru",
+      "wrongAnswers": [
+        "Naučiť študentov naspamäť Trestný zákon",
+        "Príprava výlučne na výkon funkcie sudcu",
+        "Zvýšenie počtu absolventov práva"
+      ],
+      "createdAt": 1795304411581,
+      "updatedAt": 1795304411581
     }
   ]
 }
